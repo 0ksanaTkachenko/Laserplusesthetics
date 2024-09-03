@@ -2,8 +2,8 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { fileURLToPath, URL } from 'url';
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  base: '/Laserplusesthetics/', // Убедитесь, что это имя вашего репозитория
   plugins: [react()],
   resolve: {
     alias: {
