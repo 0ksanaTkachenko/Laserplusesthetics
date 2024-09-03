@@ -1,0 +1,218 @@
+.appointment-section {
+    position: relative;
+    padding-right: var(--section-indent);
+    height: var(--medium-section-height);
+}
+
+.home-page-container {
+    display: flex;
+    height: 100%;
+    background-color: var(--sections-background);
+}
+
+.text-container {
+    height: 100%;
+    color: var(--text-white);
+    padding: var(--text-container-indent-big);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+}
+
+.img-container {
+    width: 50%;
+}
+
+.appointment p {
+    margin-bottom: var(--elem-indent-medium);
+}
+
+.appoitment-btn-container {
+    margin: 0 auto;
+}
+
+.avocado-girl-img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/* modal */
+
+/* .appointment-modal-container.hide {
+    display: none;
+}
+
+.appointment-modal-container.show {
+    display: block;
+} */
+
+
+.appointment-modal-container.show {
+    height: 100%; /* Полная высота, когда окно показано */
+    padding: var(--text-container-indent-medium); /* Устанавливаем padding для видимого состояния */
+    opacity: 1;
+}
+
+.appointment-modal-container.hide {
+    height: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.appointment-modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0; /* Начальная высота, когда окно скрыто */
+    background-color: var(--sections-background);
+    overflow: hidden; /* Прячет содержимое, когда высота равна нулю */
+    z-index: 10;
+    opacity: 0;
+    padding: 0;
+    transition: opacity 0.5s, height 0.5s, padding 0.5s; /* Переходы для плавности */
+}
+
+.appointment-modal-content {
+    height: 100%;
+    width: 100%;
+}
+
+.appointment-modal-content form{
+    height: 100%;
+    position: relative;
+}
+
+.form-step-header {
+    padding-bottom: var(--text-container-indent-small);
+    width: 100%;
+}
+
+.section-header {
+    margin-top: 0;
+    width: 100%;
+}
+
+.modal-form-input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-input-container input, select, textarea {
+    margin: var(--elem-indent-small) 0;
+    border-radius: 6px;
+    border: none;
+    padding: var(--elem-indent-small);
+}
+
+.modal-form-input-container textarea {
+    resize: none;
+}
+
+.modal-done-message {
+    margin-top: var(--elem-indent-big); 
+}
+
+.modal-btns {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;  
+}
+
+.modal-btns button, .close-button {
+    border-radius: 30px;
+    width: 25%;
+    padding: var(--elem-indent-small);
+    height: auto;  
+}
+
+.modal-done-container {
+    width: 100%;
+    text-align: center;
+}
+
+.close-button {
+    margin: 0 auto;
+    margin-top: var(--elem-indent-big);
+}
+
+.back-modal-btn {
+    background-color: transparent;
+    border-color: var(--dark-blue-background);
+}
+
+.next-modal-btn {
+    background-color: var(--dark-blue-background);
+    border: none;
+    color: var(--text-white);
+}
+
+.submit-modal-btn {
+    background-color: var(--gold-background);
+    color: var(--text-white);
+    border: none;
+}
+
+/* mobile */
+
+@media (max-width: 700px) {
+
+    .home-page-container {
+        flex-direction: column; 
+    } 
+
+    .text-container {
+        width: 100%;
+    }
+    
+    .img-container {
+        width: 100%;
+    }
+
+    .text-container {
+        text-align: center;
+        order: 2;
+        position: relative;
+    }
+
+    .appoitment-btn-container {
+        position: absolute;
+        top: -100px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+    } 
+
+    /* mobile modal */
+
+    .appointment-modal-container {
+        position: absolute;
+        bottom: 0;
+        top: auto;
+        width: 100%;
+        height: 0; 
+        transform: scaleY(0);
+        transform-origin: bottom; 
+        overflow: hidden;
+        transition: transform 0.5s, opacity 0.5s, height 0.5s; 
+        z-index: 10; 
+    }
+    
+    .appointment-modal-container.show {
+        height: 155%; 
+        transform: scaleY(1); 
+        opacity: 1;
+    }
+    
+    .appointment-modal-container.hide {
+        height: 0;
+        transform: scaleY(0);
+        opacity: 0;
+        padding: 0; 
+    } 
+}

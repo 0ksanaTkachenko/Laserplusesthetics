@@ -1,0 +1,27 @@
+.WhiteBg-text-container {
+    margin-bottom: var(--elem-indent-big);
+}
+
+.WhiteBg-text-container h2 {
+    font-size: var(--section-header);
+    color: var(--text-black);
+    margin: 0;
+    margin-top: var(--elem-indent-small);
+}
+
+.WhiteBg-text-container p {
+    font-size: var(--section-text);
+    margin: 0;
+    color: var(--text-gold);
+}
+
+.text-container-item {
+    opacity: 0;
+    transform: var(--scroll-transform-after); 
+    transition: var(--scroll-transition);
+}
+
+.text-container-item.visible {
+    opacity: 1;
+    transform: var(--scroll-transform-before); 
+}

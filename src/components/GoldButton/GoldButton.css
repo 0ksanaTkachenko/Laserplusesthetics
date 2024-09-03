@@ -1,0 +1,65 @@
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); 
+    }
+    60% {
+        transform: translateY(-5px); 
+    }
+}
+
+.gold-button {
+    background-color: var(--gold-element);
+    color: var(--text-white);
+    border: none;
+    cursor: pointer;
+    font-size: var(--section-text);
+    border-radius: var(--elem-border-radius);
+    display: block;
+    margin: 0 auto;
+    box-shadow: var(--element-medium-shadow);
+}
+
+.medium-goldBtn {
+    width: var(--medium-button-width);
+    height: var(--medium-button-height);
+}
+
+.small-goldBtn {
+    width: var(--small-button-width);
+    height: var(--small-button-height);
+}
+
+.gold-button.bounce {
+    animation: bounce 1s ease infinite;
+}
+
+.gold-button:hover.bounce {
+    animation-play-state: paused; 
+}
+
+.gold-button:hover {
+    box-shadow: var(--hover-element-shadow);
+    transform: var(--hover-element-transform);
+    filter: var(--hover-element-brightness);
+}
+
+@media (max-width: 700px) {
+    .gold-button {
+        max-width: 220px;
+    }
+
+}
+
+/* @media (max-width: 900px) {
+    .gold-button {
+        font-size: var(--section-text);
+    }
+
+} */
+
+
+
+

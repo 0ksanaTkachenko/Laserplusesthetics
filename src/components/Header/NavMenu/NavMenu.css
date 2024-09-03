@@ -1,0 +1,33 @@
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: var(--section-text);
+    padding-left: var(--elem-indent-medium);
+}
+
+.nav-item {
+    color: var(--text-black);
+    text-decoration: none;
+}
+
+.nav-item.active {
+    color: var(--hover-text-color);
+    pointer-events: none; 
+    cursor: default; 
+}
+
+.nav-item:hover {
+    color: var(--hover-text-color);
+}
+
+@media (max-width: 700px) {
+    .nav-menu {
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--elem-indent-medium);
+        position: relative;
+        z-index: 10;  
+    }   
+}

@@ -1,0 +1,107 @@
+.FAQsection-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.faq-container {
+    padding: var(--elem-indent-big) 0;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: var(--section-indent);
+    gap: var(--elem-indent-small);
+    max-width: 100%;
+}
+
+.faq-item-container {
+    opacity: 0;
+    transform: var(--scroll-transform-after); 
+    transition: var(--scroll-transition);
+}
+
+.faq-item-container.visible {
+    opacity: 1;
+    transform: var(--scroll-transform-before); 
+}
+
+.faq-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--sections-background);
+    color: var(--text-white);
+    padding: var(--text-container-indent-small);
+    width: var(--elem-medium-width);
+    border-radius: var(--elem-border-radius);
+    cursor: pointer; 
+    max-width: 90%;
+}
+
+.faq-item span {
+    font-size: 30px;
+}
+
+.faq-answer {
+    max-height: 0; 
+    overflow: hidden; 
+    transition: var(--top-to-bottom-elem-transition);
+    opacity: 0;
+    padding: var(--text-container-indent-small);
+    width: var(--elem-medium-width);
+    border-radius: var(--elem-border-radius);
+    line-height: var(--text-medium-line-height);
+    box-shadow: var(--element-shadow);
+    margin-top: 0; 
+    margin-bottom: 0;
+    text-align: justify;
+    max-width: 90%;
+}
+
+.faq-item-container.open .faq-answer {
+    max-height: 300px;
+    opacity: 1;
+    margin: var(--elem-indent-medium) 0; 
+}
+
+.more-faq-link {
+    text-decoration: none;
+    color: var(--text-gold);
+    position: relative;  
+    font-size: var(--section-text)
+}
+
+.more-faq-link::after {
+    content: '';
+    position: absolute;
+    left: -30px; 
+    bottom: -5px; 
+    width: calc(100% + 60px);
+    height: 4px; 
+    background-color: var(--text-gold);
+    transition: var(--line-stretching-transition); 
+}
+
+.more-faq-link:hover::after {
+    left: -60px; 
+    width: calc(100% + 120px); 
+}
+
+@media (max-width: 700px) {
+
+    .faq-container {
+        margin-left: var(--text-container-indent-big);
+        max-width: 400px;  
+    }
+
+    .faq-answer {
+        max-width: 400px; 
+      
+    }
+
+    .faq-item {
+        max-width: 400px;
+    }
+} 

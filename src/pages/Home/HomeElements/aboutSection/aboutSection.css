@@ -1,0 +1,128 @@
+.about-section {
+    position: relative;
+    margin-left: var(--section-indent);
+    height: var(--medium-section-height);
+    background-color: var(--sections-background)
+}
+
+.about-page-container{
+    padding: var(--text-container-indent-big);
+    display: flex;
+}
+
+.serumImg {
+    width: 100%; 
+}
+
+.faceMaskImg {
+    position: absolute;
+    width: 23%;
+    left: 36%;
+    bottom: 14%;
+}
+
+.about-page-image-container {
+    width: 50%;
+}
+
+.about-page-text-container {
+    width: 50%;
+}
+
+.about-page-image-container p {
+    font-size: var(--body-text);
+    margin: 10px auto;
+    color: var(--text-white);
+}
+
+.about-page-text-container h1 {
+    padding-left: 15px;
+    margin: 0px;
+    color: var(--text-gold);
+}
+
+.about-right-side-container {
+    margin-left: 21%;
+}
+
+.section-text {
+    margin: 0px;
+}
+
+.about-right-side-container p {
+    padding: var(--text-container-indent-medium);
+    color: var(--text-white);
+}
+
+/* mobile */
+
+@media (max-width: 700px) {
+
+    .about-section {
+        height: var(--big-section-height);
+        max-height: var(--medium-section-max-height);
+        margin-left: var(--mobile-section-indent);
+    }
+
+    .right-background-overlay {
+        width: 100% 
+    }
+
+    .about-page-container{
+        flex-direction: column;
+        padding: 0px;
+        height: 100%;
+    }
+
+    .about-page-image-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .serumImg {
+        display: none;
+    }
+     
+    .faceMaskImg {
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        object-position: top;
+    }
+
+    .about-page-image-container-text {
+        background-color: var(--semi-transparent-sections-background);
+        position: absolute;
+        bottom: 0px; 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--text-container-indent-big);  
+    }
+
+    .about-page-image-container-text h1 {
+        margin: 0;
+        color: var(--text-gold); 
+    }
+
+    .about-page-image-container-text p {
+        margin: 0;  
+    }
+
+    .about-page-image-container {
+        position: relative;
+    }
+
+    .about-page-text-container {
+        padding: var(--text-container-indent-big);  
+        width: 100%;
+    }
+
+    .about-right-side-container {
+        margin: 0px; 
+    }
+}
