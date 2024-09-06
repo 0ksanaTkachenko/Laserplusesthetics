@@ -14,7 +14,7 @@ const AboutSection = () => {
     const navigate = useNavigate();
 
     const aboutBtnHandleClick = () => {
-        navigate('/about');
+        navigate('/Laserplusesthetics/about');
     }
 
     return (

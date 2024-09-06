@@ -13,7 +13,7 @@ const ServicesSection = () => {
     const navigate = useNavigate();
 
     const servicesBtnHandleClick = () => {
-        navigate('/services');
+        navigate('/Laserplusesthetics/services');
     }
 
     return (
