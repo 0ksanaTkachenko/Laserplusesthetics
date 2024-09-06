@@ -54,9 +54,14 @@ const FAQsection = () => {
                     />
                 ))}
             </div>
+            {/* <div className='faq-link-container'>
+                <a className="more-faq-link" href="/Laserplusesthetics/faq">MORE FAQ</a>
+            </div> */}
             <div className='faq-link-container'>
-                <a className="more-faq-link" href="#/faq">MORE FAQ</a>
-            </div>
+    <button className="more-faq-link" onClick={() => window.location.href = "/Laserplusesthetics/faq"}>
+        MORE FAQ
+    </button>
+</div>
         </section>
     );
 }

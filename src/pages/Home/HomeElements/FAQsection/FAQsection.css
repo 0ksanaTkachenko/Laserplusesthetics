@@ -70,7 +70,10 @@
     text-decoration: none;
     color: var(--text-gold);
     position: relative;  
-    font-size: var(--section-text)
+    font-size: var(--section-text);
+    background-color: transparent;
+    border: none;
+    
 }
 
 .more-faq-link::after {
