@@ -55,7 +55,7 @@ const FAQsection = () => {
                 ))}
             </div>
             <div className='faq-link-container'>
-                <a className="more-faq-link" href="/Laserplusesthetics/faq">MORE FAQ</a>
+                <a className="more-faq-link" href="#/faq">MORE FAQ</a>
             </div>
         </section>
     );
