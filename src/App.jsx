@@ -25,14 +25,14 @@ const App = () => {
                         ) : (
                             <Header />
                         )}
-                        <Routes>
-                            <Route path="/" element={<HomePage />} />
-                            <Route path="/about" element={<AboutPage />} />
-                            <Route path="/services" element={<ServicesPage />} />
-                            <Route path="/results" element={<ResultsPage />} />
-                            <Route path="/faq" element={<FaqPage />} />
-                        </Routes>
-                        <Footer />
+                    <Routes>
+                        <Route path="/Laserplusesthetics/" end element={<HomePage />} />
+                        <Route path="/Laserplusesthetics/about" element={<AboutPage />} />
+                        <Route path="/Laserplusesthetics/services" element={<ServicesPage />} />
+                        <Route path="/Laserplusesthetics/results" element={<ResultsPage />} />
+                        <Route path="/Laserplusesthetics/faq" element={<FaqPage />} />    
+                    </Routes>
+                    <Footer />
                     </div>
                 <div className="sidebars"></div>
             </div>
