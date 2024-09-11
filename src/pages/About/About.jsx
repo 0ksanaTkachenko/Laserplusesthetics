@@ -1,8 +1,15 @@
 import './About.css';
+import AboutHeader from "@pages/About/AboutHeader/AboutHeader"
 
 const AboutPage = () => {
 
-    return <div className='about'>About page in progress...</div>
+    return (
+        <>
+            <AboutHeader />
+        </>
+
+    )
+   
 
 }
 

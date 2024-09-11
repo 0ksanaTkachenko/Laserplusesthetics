@@ -54,6 +54,7 @@ body {
         /* section heights */
             --medium-section-height: min(50vw, 580px);
             --big-section-height: min(65vw, 680px);
+            --small-section-height: min(30vw, 330px);
 
     /* ELEMENTS */
 
