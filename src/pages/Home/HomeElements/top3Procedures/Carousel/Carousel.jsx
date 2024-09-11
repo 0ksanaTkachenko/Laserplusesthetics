@@ -3,12 +3,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Carousel.css';
-import FacialRejuvenation from '@assets/images/slick-carousel/FacialRejuvenation.jpg';
-import FacialRejuvenationMobile from '@assets/images/slick-carousel/FacialRejuvenation-mobile.png';
-import microneedling from '@assets/images/slick-carousel/microneedling.jpg';
-import MicroneedlingMobile from '@assets/images/slick-carousel/Microneedling-mobile.png';
-import laserHairRemoval from '@assets/images/slick-carousel/LaserHairRemoval.jpg';
-import LaserHairRemovalMobile from '@assets/images/slick-carousel/LaserHairRemoval-mobile.png';
+import FacialRejuvenation from '@assets/images/HomePage/slick-carousel/FacialRejuvenation.jpg';
+import FacialRejuvenationMobile from '@assets/images/HomePage/slick-carousel/FacialRejuvenation-mobile.png';
+import microneedling from '@assets/images/HomePage/slick-carousel/microneedling.jpg';
+import MicroneedlingMobile from '@assets/images/HomePage/slick-carousel/Microneedling-mobile.png';
+import laserHairRemoval from '@assets/images/HomePage/slick-carousel/LaserHairRemoval.jpg';
+import LaserHairRemovalMobile from '@assets/images/HomePage/slick-carousel/LaserHairRemoval-mobile.png';
 import useIsMobile from '@hooks/useIsMobile'
 
 function CenterMode() {

@@ -1,8 +1,8 @@
 import './aboutSection.css';
 import GoldButton from '@components/GoldButton/GoldButton'
-import serumImg from '@assets/images/about-section/serum-img.jpg';
-import faceMaskImg from '@assets/images/about-section/face-mask-img.jpg';
-import faceMaskImgMobile from '@assets/images/about-section/faceMaskImg-mobile.png';
+import serumImg from '@assets/images/HomePage/about-section/serum-img.jpg';
+import faceMaskImg from '@assets/images/HomePage/about-section/face-mask-img.jpg';
+import faceMaskImgMobile from '@assets/images/HomePage/about-section/faceMaskImg-mobile.png';
 import useIsMobile from '@hooks/useIsMobile'
 import { useNavigate } from 'react-router-dom';
 

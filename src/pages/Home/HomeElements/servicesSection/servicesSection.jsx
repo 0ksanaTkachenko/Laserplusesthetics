@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import './servicesSection.css';
 import GoldButton from '@components/GoldButton/GoldButton'
-import servicesImg from '@assets/images/services-section/services-img.jpg'
-import servicesLaptopImg from '@assets/images/services-section/services-laptop-img.jpg'
-import servicesMobileImg from '@assets/images/services-section/services-mobile-img.jpg'
+import servicesImg from '@assets/images/HomePage/services-section/services-img.jpg'
+import servicesLaptopImg from '@assets/images/HomePage/services-section/services-laptop-img.jpg'
+import servicesMobileImg from '@assets/images/HomePage/services-section/services-mobile-img.jpg'
 import useIsMobile from '@hooks/useIsMobile'
 import { useNavigate } from 'react-router-dom';
 

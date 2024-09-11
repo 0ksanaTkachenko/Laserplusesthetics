@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import './appointmentSection.css';
 import '@/styles/global.css'
-import avocadoGirl from '@assets/images/appoitment-section/avocado-girl.png';
+import avocadoGirl from '@assets/images/HomePage/appoitment-section/avocado-girl.png';
 import GoldButton from '@components/GoldButton/GoldButton'
 import { useState } from 'react';
 
