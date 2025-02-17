@@ -1,13 +1,14 @@
 // import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '@components/Header/DesktopHeader/Header';
 import Footer from '@components/Footer/Footer';
 import HomePage from '@pages/Home/Home';
-import AboutPage from '@pages/About/About';
+import AboutPage from './pages/about/about';
 import ServicesPage from '@pages/Services/Services'
 import ResultsPage from '@pages/Results/Results'
 import FaqPage from '@pages/FAQ/FAQ'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './styles/global.css'; 
+import './global.css'; 
 import useIsMobile from '@hooks/useIsMobile'
 import MobileHeader from '@components/Header/MobileHeader/MobileHeader';
 
@@ -26,7 +27,7 @@ const App = () => {
                             <Header />
                         )}
                     <Routes>
-                        <Route path="/Laserplusesthetics/" end element={<HomePage />} />
+                        {/* <Route path="/Laserplusesthetics/" element={<HomePage />} /> */}
                         <Route path="/Laserplusesthetics/about" element={<AboutPage />} />
                         <Route path="/Laserplusesthetics/services" element={<ServicesPage />} />
                         <Route path="/Laserplusesthetics/results" element={<ResultsPage />} />

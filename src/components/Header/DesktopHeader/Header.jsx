@@ -1,5 +1,4 @@
 // import React from 'react';
-import '@/styles/global.css'
 import './Header.css';
 import logo from '@assets/images/logo.png';
 import MenuComponent from '@components/Header/NavMenu/navMenu'

@@ -3,5 +3,10 @@
     height: 600px;
     text-align: center;
     padding-top: 100px;
+}
 
+.aboutPage {
+    display: flex;
+    flex-direction: column;
+    gap: var(--indent-big);
 }

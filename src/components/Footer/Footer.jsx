@@ -1,7 +1,4 @@
-import '@/styles/global.css'
 import './Footer.css';
-
-
 
 const Footer = () => { 
     return (

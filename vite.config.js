@@ -20,6 +20,7 @@ export default defineConfig({
       '@hooks': fileURLToPath(
         new URL('./src/hooks', import.meta.url),
       ),
+      '@data': fileURLToPath(new URL('./src/data', import.meta.url)),
     },
   },
 });
