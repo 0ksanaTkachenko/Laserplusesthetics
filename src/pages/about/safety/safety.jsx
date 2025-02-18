@@ -27,9 +27,9 @@ const Safety = () => {
                         <li> Personalized skincare treatments based on skin condition and health</li>
                     </ul>
                     <div className="safety-vid">
-                    <video autoPlay loop muted playsInline>
-                        <source src={safetyVid} type="video/mp4" />
-                    </video>
+                        <video autoPlay loop muted playsInline>
+                            <source src={safetyVid} type="video/mp4" />
+                        </video>
                     </div>
                 </div>
             </div>
