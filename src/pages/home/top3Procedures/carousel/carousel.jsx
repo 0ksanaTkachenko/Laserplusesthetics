@@ -49,6 +49,9 @@ const CenterMode = () => {
     const slides = [
         { img: FacialRejuvenation, mobileImg: FacialRejuvenationMobile, text: "Facial Rejuvenation" },
         { img: microneedling, mobileImg: MicroneedlingMobile, text: "Microneedling" },
+        { img: laserHairRemoval, mobileImg: LaserHairRemovalMobile, text: "Laser Hair Removal" },
+        { img: FacialRejuvenation, mobileImg: FacialRejuvenationMobile, text: "Facial Rejuvenation" },
+        { img: microneedling, mobileImg: MicroneedlingMobile, text: "Microneedling" },
         { img: laserHairRemoval, mobileImg: LaserHairRemovalMobile, text: "Laser Hair Removal" }
     ];
 

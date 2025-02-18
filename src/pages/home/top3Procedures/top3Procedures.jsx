@@ -2,7 +2,6 @@ import './top3Procedures.css';
 import SectionHeader from '../../../components/sectionHeader/sectionHeader';
 import CenterMode from './carousel/carousel';
 
-
 const Top3Procedures = () => {
 
     return (

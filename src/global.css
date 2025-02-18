@@ -186,7 +186,7 @@ h1, h2, h3 {
 
 @media (max-width: 430px) {
  :root {
-    --font-size-small: 0.7rem;
+    --font-size-small: 1rem;
     --font-size-med-small: 1.2rem;
     --font-size-med: 1.7rem;
     --font-size-big: 2.7rem;

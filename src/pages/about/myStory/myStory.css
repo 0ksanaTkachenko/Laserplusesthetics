@@ -55,6 +55,7 @@
 .about-me-text {
     font-size: var(--font-size-small);
     line-height: 1.6;
+    text-align: justify;
 }
 
 .future-img {

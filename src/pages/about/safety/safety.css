@@ -23,6 +23,7 @@
 .safety-description-text {
     font-size: var(--font-size-med-small);
     width: 75%;
+    text-align: justify;
 }
 
 .safety-main-container {
@@ -59,8 +60,8 @@
 .safety-list li {
     font-size: var(--font-size-small);
     width: 100%;
+    text-align: justify;
 }
-
 
 .safety-vid {
     width: 300px;
@@ -71,10 +72,6 @@
     height: auto;
     display: block;
 }
-
-
-
-
 
 
 @media (max-width: 1024px) {

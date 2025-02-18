@@ -23,8 +23,9 @@ const AboutPage = () => {
 
     return (
         <div className='aboutPage'>
-            <div ref={headerRef}></div>
-            <AboutHeader />
+            <div ref={headerRef}>
+                <AboutHeader />
+            </div>
             <MyStory />
             <Safety />
             <div ref={faqRef}>
