@@ -2,8 +2,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '@components/Header/DesktopHeader/Header';
 // import Footer from '@components/Footer/Footer';
-import HomePage from './pages/home/home';
-import AboutPage from './pages/about/about';
+import HomePage from '@pages/home/home';
+import AboutPage from '@pages/about/about';
 import ServicesPage from '@pages/Services/Services'
 import ResultsPage from '@pages/Results/Results'
 import FaqPage from '@pages/FAQ/FAQ'
