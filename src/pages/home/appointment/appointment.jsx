@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import './appointment.css';
-import ModalAppointment from '../../../components/modalAppointment/modalAppointment';
+import ModalAppointment from '@components/modalAppointment/modalAppointment';
 import avocadoGirl from '@assets/images/HomePage/appoitment-section/avocado-girl.png';
 import GoldButton from '@components/goldbutton/goldbutton'
 import { useState } from 'react';
