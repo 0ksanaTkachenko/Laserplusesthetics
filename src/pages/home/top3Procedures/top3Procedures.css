@@ -1,0 +1,20 @@
+.top3Procedures-section {
+    text-align: center; 
+}
+
+.top3Procedures-text-container h2 {
+    color: var(--text-black);
+    font-size: 35px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.top3Procedures-text-container p {
+    margin: 0px;
+    color: var(--text-gold);
+    font-size: 25px; 
+}
+
+.top3Procedures-slider {
+    margin: 70px 0px;
+}

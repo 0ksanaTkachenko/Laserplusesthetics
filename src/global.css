@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('/src/assets/fonts/Lora-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('/src/assets/fonts/Lora-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: 'Lora', serif, Georgia, 'Times New Roman', Times;
+}
+
+p {
+    margin: 0px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif, Garamond, 'Times New Roman', serif;
+    margin: 0px;
+}
+
+
+:root {
+  
+    /* COLORS */
+
+    /* text-colors */
+    --text-gold: #CC9600;
+    --hover-text-color: #CC9600;
+    --text-white: #FFFFFF;
+    --text-black: #000000;
+        
+    /* elements colors */
+    --gold-element: #CC9600;
+    --white-element: #FFFFFF;
+    --black-element: #000000;
+    
+    /* background-colors */
+    --gold-background: #CC9600; 
+    --white-background: #FFFFFF;
+    --dark-blue-background: #087CA0;
+    --light-blue-background: #d6e3ea;
+    --semi-transparent-sections-background: #087ca092;
+    --sections-background: #8cb3c7;
+
+    /* TEXT */
+
+    /* font sizes */
+    --font-size-small: 1.3rem;
+    --font-size-med-small: 1.8rem;
+    --font-size-med: 2.3rem;
+    --font-size-big: 3.3rem;
+    --font-size-bigger: 4.3rem;
+    --font-size-extra-big: 6rem;
+
+    /* line-height */
+
+    --line-height-med: 1.8;
+
+    /* INDENTS */
+
+   --indent-small: 50px;
+   --indent-med: 90px;
+   --indent-big: 150px;
+   --text-indent-small: 10px;
+   --text-indent-med: 30px;
+
+    /* ELEMENTS */
+
+    /* sections elements border-radius */
+    --elem-border-radius: 10px;
+
+    /* sections elements shadow */
+    --element-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    --element-medium-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+
+
+
+ 
+
+
+
+
+
+    /* section indents */
+    --section-indent: 55px;
+
+
+    --big-section-height: min(65vw, 680px);
+
+
+
+
+
+
+
+        /* text line-height */
+            --text-medium-line-height: 1.5;
+
+        /* text indents */
+            --text-container-indent-big: min(5vw, 55px);
+            --text-container-indent-medium: min(5vw, 34px);    
+            --text-container-indent-small: min(5vw, 8px);
+
+
+    /* ELEMENTS */
+
+        /* sections elements indents */
+            --elem-indent-big: min(5vw, 55px);;
+            --elem-indent-medium: min(3vw, 35px);
+            --elem-indent-small: min(1vw, 10px);
+
+  
+
+      
+
+        /* sections elements width */
+            --elem-medium-width: 75vw;
+
+    /* TRANSITIONS */
+
+        /* element appears when scrolling the page */
+        --scroll-transition: opacity 0.6s ease, transform 0.6s ease;
+        --scroll-transform-after: translateY(20px); 
+        --scroll-transform-before: translateY(0px); 
+
+        /* element magnification on hover */
+        --hover-element-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
+        --hover-element-transform: scale(1.1);
+        --hover-element-transition: transform 0.4s ease;
+        --hover-element-brightness: brightness(95%);
+
+        /* element evetns */
+        --event-element-transition: transform 0.4s ease;
+        
+        /* expanding an element from top to bottom */
+        --top-to-bottom-elem-transition: max-height 0.5s ease-out, opacity 0.5s ease-out, margin 0.5s ease-out; 
+
+        /* line stretching in 2 directions */
+        --line-stretching-transition: width 0.3s ease, left 0.3s ease; 
+}
+
+
+
+/* @media (max-width: 1024px) {
+    :root {
+   
+    }
+
+} */
+
+@media (max-width: 760px) {
+    :root {
+        --font-size-small: 1rem;
+        --font-size-med-small: 1.5rem;
+        --font-size-med: 2rem;
+        --font-size-big: 2.5rem;
+        --font-size-bigger: 3rem;
+        --font-size-extra-big: 5rem;
+
+     
+    }
+
+}
+
+@media (max-width: 430px) {
+ :root {
+    --font-size-small: 0.7rem;
+    --font-size-med-small: 1.2rem;
+    --font-size-med: 1.7rem;
+    --font-size-big: 2.7rem;
+    --font-size-bigger: 3.7rem;
+    --font-size-extra-big: 4.5rem;
+
+    --indent-med: 50px;
+    --indent-big: 100px;
+
+  
+
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (min-width: 900px) and (max-width: 1050px) {
+    :root {
+        --section-header: 35px;
+        --section-text: 26px;
+        --body-text: 22px;
+        --medium-button-height: 65px;
+        --small-button-width: min(25vw, 200px);
+    }
+}
+
+@media (max-width: 900px) {
+    :root {
+        --section-header: 31px;
+        --section-text: 23px;
+        --body-text: 20px;
+        --small-button-height: 60px;
+    }
+}
+
+@media (max-width: 820px) {
+    :root {
+        --section-header: 28px;
+        --section-text: 20px;
+        --body-text: 18px;
+    }
+}
+
+@media (max-width: 780px) {
+    :root {
+        --section-header: 25px;
+        --section-text: 18px;
+        --body-text: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    :root {
+        --medium-button-width: 45vw;
+        --big-section-height: calc(155vw);
+        --section-indent: 0px;
+        --medium-section-height: min(160vw, 750px);
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --section-header: 25px;
+        --section-text: 20px;
+        --body-text: 19px;
+    }
+}
+
+
+@media (max-width: 430px) {
+    :root {
+        --medium-button-width: 50vw;
+        --medium-button-height: 40px;
+        --section-header: 22px;
+        --section-text: 16px;
+        --body-text: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    :root {
+        --section-header: 19px;
+        --section-text: 13px;
+        --body-text: 12px;
+    }
+}
+
+.body-text {
+    font-size: var(--body-text);
+}
+
+.section-header {
+    font-size: var(--section-header);
+}
+
+.section-text {
+    font-size: var(--section-text);
+}
+
+.medium-text {
+    font-size: var(--medium-body-text);
+}
+
+.small-text {
+    font-size: var(--small-body-text);
+}
+
+
+@media (min-width: 450px) and (max-width: 700px) {
+    .page-container {
+        grid-template-columns: 1fr 450px 1fr; 
+    }
+}  
+
+.sidebars {
+    width: 100%;
+    height: 100%;
+} */

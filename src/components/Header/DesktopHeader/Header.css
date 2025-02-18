@@ -1,0 +1,53 @@
+.top-bar {
+    position: relative;
+    color: var(--text-white);
+    height: min(6vw, 100px);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: var(--dark-blue-background); 
+}
+
+.contact-info {
+    display: flex;
+    gap: var(--elem-indent-big); 
+    padding-right: var(--section-indent);
+}
+
+.contact-address, .contact-text {
+    position: relative;
+}
+
+.contact-info .contact-text::before, .contact-address::before {
+    content: '';
+    background-size: cover;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -25px;
+}
+
+.contact-info .contact-text::before {
+    background-image: url('@assets/images/phone-icon.png');
+} 
+
+.contact-info .contact-address::before {
+    background-image: url('@assets/images/location-icon.png');
+} 
+
+.header-container {
+    background-color: var(--white-background);
+    color: var(--text-black);
+    padding-right: var(--section-indent);
+    padding-left: var(--elem-indent-small);
+}
+
+.header-inner-container {
+    display: flex;
+    align-items: center; 
+    height: min(13vw, 220px);
+}
+
+.logo {
+    height: min(13vw, 150px);
+}

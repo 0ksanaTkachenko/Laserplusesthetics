@@ -1,0 +1,132 @@
+.safety {
+    gap: var(--indent-big);
+}
+
+.safety-header-container {
+    gap: 20px;
+}
+
+.safety-title {
+    width: 25%;
+    height: 380px; 
+    font-size: var(--font-size-med);
+    background-image: url('@assets/images/AboutPage/safety-background.png');
+    background-size: auto 100%; 
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.safety-description-container {
+    width: 75%;
+}
+
+.safety-description-text {
+    font-size: var(--font-size-med-small);
+    width: 75%;
+}
+
+.safety-main-container {
+    background-color: var(--dark-blue-background);
+    height: 100%;
+    color: var(--text-white);
+}
+
+.safety-main-container::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("@assets/images/AboutPage/wave.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: 2; 
+}
+
+.safety-main-title {
+    font-size: var(--font-size-med-small);
+    padding: 40px;
+}
+
+.safety-list-container {
+    width: 80%;
+    gap: 30px;
+    padding-bottom: var(--indent-med);
+}
+
+.safety-list li {
+    font-size: var(--font-size-small);
+    width: 100%;
+}
+
+
+.safety-vid {
+    width: 300px;
+}
+  
+.safety-vid video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    .safety-title {
+        width: 35%;
+    }
+    
+    .safety-description-container {
+        width: 65%;
+    }
+    
+    .safety-vid {
+        width: 70%;
+    }
+
+    .safety-list-container {
+        width: 90%;
+    }
+
+    .safety-main-container::before {
+        top: -80px; 
+        height: 90px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .safety-header-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .safety-title {
+        width: 100%;
+        height: 270px;
+        justify-content: center;
+        background-position: center;
+    }
+
+    .safety-description-container {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .safety-main-container::before {
+        top: -50px;
+        height: 60px; 
+    }
+
+    .safety-list-container {
+        flex-direction: column;
+    }
+}
