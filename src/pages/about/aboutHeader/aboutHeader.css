@@ -44,6 +44,10 @@
 
 @media (max-width: 430px) {
 
+    .about-header-container {
+        height: 450px;
+    }
+
     .about-img-container {
         width: 80%;
         height: 70%;
