@@ -14,7 +14,7 @@ import MobileHeader from '@components/Header/MobileHeader/MobileHeader';
 
 const App = () => {
 
-    const isMobile = useIsMobile();
+    const isMobile = useIsMobile(700);
     
     return (
         <Router>

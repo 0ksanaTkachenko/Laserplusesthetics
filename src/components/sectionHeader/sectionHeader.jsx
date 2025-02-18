@@ -1,11 +1,7 @@
 /* eslint-disable react/prop-types */
-import './WhiteBgSectionHeader.css';
-import useScrollAnimation from '@hooks/useScrollAnimation'
+import './sectionHeader.css';
 
-const WhiteBgHeader = ({ p, h2 }) => {
-    
-    useScrollAnimation('.text-container-item');
-
+const SectionHeader = ({ p, h2 }) => {
     return (
         <div className="WhiteBg-text-container">
             <p className='text-container-item'>{p}</p>
@@ -14,4 +10,4 @@ const WhiteBgHeader = ({ p, h2 }) => {
     )
 }
 
-export default WhiteBgHeader
+export default SectionHeader

@@ -1,20 +1,8 @@
 /* eslint-disable react/prop-types */
 import './faq.css';
-import classNames from 'classnames';
 import { useState } from 'react';
 import FAQData from '../../../data/faq';
-
-const FAQItem = ({ question, answer, isOpen, onClick, hasVisibleClass = true }) => {
-    return (
-        <div onClick={onClick} className={classNames('faq-item-container', {'visible': hasVisibleClass, 'open': isOpen })}>
-            <div className='faq-item d-flex align-items-center justify-content-between cursor-pointer'>
-                {question}
-                <span className="faq-toggle-icon">{isOpen ? '−' : '+'}</span>
-            </div>
-            <div className={classNames('faq-answer text-justify overflow-hidden', { 'open': isOpen })}>{answer}</div>
-        </div>
-    );
-};
+import FaqItem from '../../../components/faqItem/faqItem';
 
 const Faq = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -38,7 +26,7 @@ const Faq = () => {
             <div className="faq-container d-flex">
                 <div className="faq-column faq-column-1">
                     {column1.map((item, index) => (
-                        <FAQItem
+                        <FaqItem
                             key={index}
                             question={item.question}
                             answer={item.answer}
@@ -49,7 +37,7 @@ const Faq = () => {
                 </div>
                 <div className="faq-column faq-column-2">
                     {column2.map((item, index) => (
-                        <FAQItem
+                        <FaqItem
                             key={index + midIndex}
                             question={item.question}
                             answer={item.answer}

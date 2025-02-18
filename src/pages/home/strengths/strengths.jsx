@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import useScrollAnimation from '@hooks/useScrollAnimation'
-import './strengthsSection.css';
-import WhiteBgSectionHeader from '@components/WhiteBgSectionHeader/WhiteBgSectionHeader'
+import './strengths.css';
+import SectionHeader from '../../../components/sectionHeader/sectionHeader';
 import educationIcon from '@assets/images/HomePage/strengths-section/education-icon.png';
 import experienceIcon from '@assets/images/HomePage/strengths-section/experience-icon.png';
 import certifiedIcon from '@assets/images/HomePage/strengths-section/certified-icon.png';
@@ -25,12 +25,12 @@ const StrengthsItem = ({ icon, text }) => {
     ); 
 };
 
-const StrengthsSection = () => {
+const Strengths = () => {
     useScrollAnimation('.strengths-item-container');
 
     return (
         <section className='strengths-section'>
-            <WhiteBgSectionHeader
+            <SectionHeader
                 p={'Why Choose Us'}
                 h2={'Our Strengths'}
             />
@@ -48,4 +48,4 @@ const StrengthsSection = () => {
     );
 };
 
-export default StrengthsSection;
+export default Strengths;

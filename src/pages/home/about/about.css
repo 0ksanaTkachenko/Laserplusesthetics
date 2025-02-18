@@ -1,12 +1,10 @@
 .about-section {
     position: relative;
-    margin-left: var(--section-indent);
-    height: var(--medium-section-height);
     background-color: var(--sections-background)
 }
 
 .about-page-container{
-    padding: var(--text-container-indent-big);
+    padding: var(--indent-small);
     display: flex;
 }
 
@@ -27,18 +25,24 @@
 
 .about-page-text-container {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .about-page-image-container p {
-    font-size: var(--body-text);
+    font-size: var(--font-size-small);
     margin: 10px auto;
     color: var(--text-white);
 }
+
 
 .about-page-text-container h1 {
     padding-left: 15px;
     margin: 0px;
     color: var(--text-gold);
+    font-size: var(--font-size-med);
 }
 
 .about-right-side-container {
@@ -47,26 +51,21 @@
 
 .section-text {
     margin: 0px;
-}
-
-.about-right-side-container p {
+    text-align: justify;
+    font-size: var(--font-size-small);
     padding: var(--text-container-indent-medium);
     color: var(--text-white);
 }
 
+
 /* mobile */
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
 
     .about-section {
-        height: var(--big-section-height);
-        max-height: var(--medium-section-max-height);
-        margin-left: var(--mobile-section-indent);
+        height: 1000px;
     }
 
-    .right-background-overlay {
-        width: 100% 
-    }
 
     .about-page-container{
         flex-direction: column;
@@ -97,20 +96,29 @@
         background-color: var(--semi-transparent-sections-background);
         position: absolute;
         bottom: 0px; 
+        right: 0px;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: var(--text-container-indent-big);  
+        height: 80px;
+        gap: 20px;
     }
 
     .about-page-image-container-text h1 {
+        text-align: center;
+        position: relative;
+        background-color: transparent;
+        padding: 0px;
+        height: auto;
         margin: 0;
         color: var(--text-gold); 
+        width: 50%;
     }
 
     .about-page-image-container-text p {
         margin: 0;  
+        width: 50%;
     }
 
     .about-page-image-container {
@@ -118,11 +126,18 @@
     }
 
     .about-page-text-container {
-        padding: var(--text-container-indent-big);  
+        padding: 30px;  
         width: 100%;
     }
 
     .about-right-side-container {
         margin: 0px; 
+    }
+}
+
+@media (max-width: 767px) {
+
+    .about-section {
+        height: 750px;
     }
 }

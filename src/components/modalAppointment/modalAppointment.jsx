@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
 import './ModalAppointment.css';
-import React, { useRef } from 'react';
-import ReactDOM from 'react-dom';
 import Modal from 'react-bootstrap/Modal';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';

@@ -3,7 +3,7 @@ import './appointment.css';
 import ModalAppointment from '../../../components/modalAppointment/modalAppointment';
 import avocadoGirl from '@assets/images/HomePage/appoitment-section/avocado-girl.png';
 import GoldButton from '@components/GoldButton/GoldButton'
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Appointment = () => {
 

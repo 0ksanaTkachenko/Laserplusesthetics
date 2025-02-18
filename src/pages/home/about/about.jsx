@@ -1,4 +1,4 @@
-import './aboutSection.css';
+import './about.css';
 import GoldButton from '@components/GoldButton/GoldButton'
 import serumImg from '@assets/images/HomePage/about-section/serum-img.jpg';
 import faceMaskImg from '@assets/images/HomePage/about-section/face-mask-img.jpg';
@@ -6,15 +6,15 @@ import faceMaskImgMobile from '@assets/images/HomePage/about-section/faceMaskImg
 import useIsMobile from '@hooks/useIsMobile'
 import { useNavigate } from 'react-router-dom';
 
-const AboutSection = () => {
+const About = () => {
 
-    const isMobile = useIsMobile();
+    const isMobile = useIsMobile(1000);
     const goldBtnClassname = isMobile ? 'medium-goldBtn' : 'small-goldBtn'
 
     const navigate = useNavigate();
 
     const aboutBtnHandleClick = () => {
-        navigate('/Laserplusesthetics/about');
+        navigate('/Laserplusesthetics/about#about-header');
     }
 
     return (
@@ -23,7 +23,7 @@ const AboutSection = () => {
                 <div className="about-page-image-container">
                     <img className="serumImg" src={serumImg} alt="" />
                     <picture>
-                        <source media="(max-width: 700px)" srcSet={faceMaskImgMobile} /> 
+                        <source media="(max-width: 1000px)" srcSet={faceMaskImgMobile} /> 
                         <img className="faceMaskImg" src={faceMaskImg} alt="" />
                     </picture> 
                     <div className='about-page-image-container-text'>
@@ -34,7 +34,7 @@ const AboutSection = () => {
                 <div className="about-page-text-container">
                     {!isMobile && <h1 className='section-header'>ABOUT ME</h1>}
                     <div className="about-right-side-container">
-                        <p className='section-text'>Find out more about my background, expertise, and what drives me to offer top-notch services. Click to explore my story.</p>
+                        <p className='section-text'>Discover more about my journey, professional expertise, and the passion that fuels my commitment to delivering exceptional services. Learn about my experience, dedication, and the values that shape my approach. Click to explore my story.</p>
                         <div className='about-btn-container'>
                             <GoldButton onClick={aboutBtnHandleClick} className={goldBtnClassname}>Get to Know Me</GoldButton>
                         </div>
@@ -45,4 +45,4 @@ const AboutSection = () => {
     )
 }
 
-export default AboutSection
+export default About

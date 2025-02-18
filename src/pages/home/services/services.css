@@ -1,0 +1,114 @@
+.services-section {
+    position: relative;
+}
+
+.services-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('@assets/images/HomePage/services-section/services-background.png');
+    display: flex;
+    justify-content: space-between;
+    padding: var(--indent-small);
+    gap: 20px;
+}
+
+.services-img-container {
+    width: 40%;
+}
+
+.services-img {
+    height: 100%;
+    width: 100%;
+}
+
+.services-text-container {
+    width: 60%;
+    background-color: var(--semi-transparent-sections-background);
+    color: var(--text-white);
+    padding: var(--indent-med) var(--indent-small);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services-text-container h1 {
+    font-size: var(--font-size-med);
+    text-align: center;
+}
+
+.services-text-container p {
+    font-size: var(--font-size-small);
+    text-align: justify;
+}
+
+@media (max-width: 1200px) {
+    .services-text-container {
+        padding: var(--indent-small);
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .services-section {
+        height: 900px;
+    }
+
+    .services-container {
+        background-image: none;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px;
+        height: 100%;
+    }
+
+    .services-text-container {
+        height: 35%;
+        width: 100%;
+    }
+
+    .services-img-container {
+        position: relative;
+        height: 65%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .services-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .section-header {
+        background-color: var(--semi-transparent-sections-background);
+        position: absolute;
+        color: var(--text-white);
+        bottom: 0px;
+        width: 100%;
+        padding: 20px var(--indent-small);
+    }
+}
+
+@media (max-width: 430px) {
+    .services-section {
+        height: 650px;
+    }
+
+    .section-header {
+        padding: 20px;
+    }
+
+    .services-text-container {
+        padding: 20px;
+    }
+
+    .services-text-container {
+        height: 30%;
+    }
+
+    .services-img-container {
+        height: 70%;
+    }
+
+}
