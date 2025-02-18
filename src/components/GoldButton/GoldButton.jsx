@@ -8,6 +8,7 @@ const GoldButton = ({ children, onClick}) => {
         >
             {children}
         </button>
+        
     );
 }
 
