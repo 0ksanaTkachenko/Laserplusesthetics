@@ -6,6 +6,7 @@ import MyStory from './myStory/myStory';
 import Safety from './safety/safety';
 import Faq from './faq/faq';
 
+
 const AboutPage = () => {
     const faqRef = useRef(null);
     const headerRef = useRef(null);
