@@ -2,7 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '@components/Header/DesktopHeader/Header';
 import Footer from '@components/Footer/Footer';
-import HomePage from '@pages/Home/Home';
+import HomePage from './pages/home/Home';
 import AboutPage from './pages/about/about';
 import ServicesPage from '@pages/Services/Services'
 import ResultsPage from '@pages/Results/Results'
@@ -27,13 +27,13 @@ const App = () => {
                             <Header />
                         )}
                     <Routes>
-                        {/* <Route path="/Laserplusesthetics/" element={<HomePage />} /> */}
+                        <Route path="/Laserplusesthetics/" element={<HomePage />} />
                         <Route path="/Laserplusesthetics/about" element={<AboutPage />} />
                         <Route path="/Laserplusesthetics/services" element={<ServicesPage />} />
                         <Route path="/Laserplusesthetics/results" element={<ResultsPage />} />
                         <Route path="/Laserplusesthetics/faq" element={<FaqPage />} />    
                     </Routes>
-                    <Footer />
+                    {/* <Footer /> */}
                     </div>
                 <div className="sidebars"></div>
             </div>

@@ -1,0 +1,145 @@
+
+.modal-dialog {
+    width: 70vw;
+    max-width: 70vw;
+}
+
+.modal-content {
+    border-radius: 25px;
+    height: 65vh;
+    background-color: var(--light-blue-background);
+
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    font-size: 15px;
+}
+
+.form-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 70%;
+    width: 60%;
+}
+
+.form-content div {
+    width: 45%;
+
+}
+
+.form-content .textarea-div {
+    width: 100%;
+
+}
+
+.form-content .form-check {
+    width: 100%;
+
+}
+
+.form-content input {
+
+    background-color: #087ca031;
+}
+
+.textarea {
+    background-color: #087ca031;
+    width: 100%;
+}
+
+.form-content select {
+    background-color: #087ca031;
+}
+
+.modal-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.modal-footer p {
+    width: 70%;
+}
+
+.cosmetology-img {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    right: 0px;
+}
+
+.modal-btn {
+    background-color: var(--dark-blue-background);
+    color: var(--text-white);
+    padding: 5px 50px;
+    font-size: var(--font-size-small);
+    position: relative;
+    z-index: 10;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+.form-content .error {
+
+    width: 100%;
+    color: var(--text-gold);
+}
+
+.form-content .input-container {
+    display: flex;
+    width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+
+
+}
+
+
+@media (max-width: 970px) {
+ 
+    .cosmetology-img {
+        position: absolute;
+        width: 300px;
+        height: auto;
+        bottom: 0px;
+    }
+
+    .form-content {
+
+        width: 100%;
+        height: 55%;
+    }
+
+    .modal-footer {
+        width: 80%
+    }
+
+    .modal-content {
+        height: 600px;
+    }
+
+    .modal-dialog {
+        width: 90vw;
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+
+    form {
+        font-size: 10px;
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 430px) {
+
+}

@@ -1,14 +1,10 @@
 /* eslint-disable react/prop-types */
+import './goldButton.css';
 
-import './GoldButton.css';
-
-const GoldButton = ({ children, className, bounce = false, onClick}) => {
-
-    
-    
+const GoldButton = ({ children, onClick}) => {
     return (
         <button onClick={onClick}
-            className={`gold-button ${className} ${bounce ? 'bounce' : ''}`}
+            className={`gold-button`}
         >
             {children}
         </button>

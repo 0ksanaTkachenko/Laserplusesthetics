@@ -93,10 +93,11 @@ h1, h2, h3 {
     /* sections elements shadow */
     --element-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     --element-medium-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+
+
+
  
-
-
-
 
 
 
@@ -136,12 +137,6 @@ h1, h2, h3 {
 
         /* sections elements width */
             --elem-medium-width: 75vw;
-
-        /* button-sizes */
-            --medium-button-width: min(30vw, 320px);
-            --medium-button-height: 70px;
-            --small-button-width: min(25vw, 250px);
-            --small-button-height: 75px;
 
     /* TRANSITIONS */
 
