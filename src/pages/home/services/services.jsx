@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import './services.css';
-import GoldButton from '@components/GoldButton/GoldButton'
+import GoldButton from '@components/goldButton/goldButton'
 import servicesImg from '@assets/images/HomePage/services-section/services-img.jpg'
 import servicesLaptopImg from '@assets/images/HomePage/services-section/services-laptop-img.jpg'
 import servicesMobileImg from '@assets/images/HomePage/services-section/services-mobile-img.jpg'
