@@ -1,5 +1,5 @@
 import './about.css';
-import GoldButton from '@components/GoldButton/GoldButton'
+import GoldButton from '@components/goldButton/goldButton'
 import serumImg from '@assets/images/HomePage/about-section/serum-img.jpg';
 import faceMaskImg from '@assets/images/HomePage/about-section/face-mask-img.jpg';
 import faceMaskImgMobile from '@assets/images/HomePage/about-section/faceMaskImg-mobile.png';
