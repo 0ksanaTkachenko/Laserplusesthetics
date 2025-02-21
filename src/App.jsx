@@ -1,10 +1,10 @@
 // import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '@components/Header/DesktopHeader/Header';
-// import Footer from '@components/Footer/Footer';
+import Footer from '@components/Footer/Footer';
 import HomePage from '@pages/home/home';
 import AboutPage from '@pages/about/about';
-import ServicesPage from '@pages/Services/Services'
+import ServicesPage from './pages/services/services';
 import ResultsPage from '@pages/Results/Results'
 import FaqPage from '@pages/FAQ/FAQ'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -33,7 +33,7 @@ const App = () => {
                         <Route path="/Laserplusesthetics/results" element={<ResultsPage />} />
                         <Route path="/Laserplusesthetics/faq" element={<FaqPage />} />    
                     </Routes>
-                    {/* <Footer /> */}
+                    <Footer />
                     </div>
                 <div className="sidebars"></div>
             </div>
