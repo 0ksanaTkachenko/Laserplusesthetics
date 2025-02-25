@@ -213,3 +213,6 @@
     padding: 10px;
   }
 }
+.disable-scroll {
+  touch-action: none;
+}

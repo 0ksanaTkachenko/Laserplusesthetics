@@ -7,17 +7,34 @@ import servicesHeaderLeft from '@assets/images/resultsPage/services-header-left.
 import servicesHeaderRight from '@assets/images/resultsPage/services-header-right.png';
 import servicesHighlight from '@assets/images/resultsPage/services-highlight.png';
 import bookNowBtn from '@assets/images/resultsPage/book-now-btn.png';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ModalAppointment from '@components/modalAppointment/modalAppointment';
 
 const ResultItem = ({ result }) => {
   const [sliderPosition, setSliderPosition] = useState(0.5);
+  const [isDragging, setIsDragging] = useState(false);
+
+  useEffect(() => {
+    const handleTouchMove = (e) => {
+      if (isDragging) {
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
+    return () => {
+      document.removeEventListener('touchmove', handleTouchMove);
+    };
+  }, [isDragging]);
 
   return (
     <div className="result-item d-flex flex-column justify-content-between h-auto position-relative">
       <h2 className="result-title text-center mx-auto">{result.title}</h2>
-
-      <div className="compare-wrapper position-relative">
+      <div
+        className="compare-wrapper position-relative"
+        onTouchStart={() => setIsDragging(true)}
+        onTouchEnd={() => setIsDragging(false)}
+      >
         <ReactCompareImage
           leftImage={result.beforeImage}
           rightImage={result.afterImage}

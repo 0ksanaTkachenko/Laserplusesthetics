@@ -1,167 +1,148 @@
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('/src/assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Playfair Display';
+  src: url('/src/assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lora';
-    src: url('/src/assets/fonts/Lora-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Lora';
+  src: url('/src/assets/fonts/Lora-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lora';
-    src: url('/src/assets/fonts/Lora-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
+  font-family: 'Lora';
+  src: url('/src/assets/fonts/Lora-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
 }
-
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
-    max-width: 100%;
-    font-family: 'Lora', serif, Georgia, 'Times New Roman', Times;
+  overflow-x: hidden;
+  max-width: 100%;
+  font-family: 'Lora', serif, Georgia, 'Times New Roman', Times;
 }
 
 p {
-    margin: 0px;
+  margin: 0px;
 }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif, Garamond, 'Times New Roman', serif;
-    margin: 0px;
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif, Garamond, 'Times New Roman', serif;
+  margin: 0px;
 }
 
+.disable-scroll {
+  touch-action: none;
+}
 
 :root {
-  
-    /* COLORS */
+  /* COLORS */
 
-    /* text-colors */
-    --text-gold: #CC9600;
-    --hover-text-color: #CC9600;
-    --text-white: #FFFFFF;
-    --text-black: #000000;
-        
-    /* elements colors */
-    --gold-element: #CC9600;
-    --white-element: #FFFFFF;
-    --black-element: #000000;
-    
-    /* background-colors */
-    --gold-background: #CC9600; 
-    --white-background: #FFFFFF;
-    --dark-blue-background: #087CA0;
-    --light-blue-background: #d6e3ea;
-    --semi-transparent-sections-background: #087ca092;
-    --sections-background: #8cb3c7;
+  /* text-colors */
+  --text-gold: #cc9600;
+  --hover-text-color: #cc9600;
+  --text-white: #ffffff;
+  --text-black: #000000;
 
-    /* TEXT */
+  /* elements colors */
+  --gold-element: #cc9600;
+  --white-element: #ffffff;
+  --black-element: #000000;
 
-    /* font sizes */
-    --font-size-small: 1.3rem;
-    --font-size-med-small: 1.8rem;
-    --font-size-med: 2.3rem;
-    --font-size-big: 3.3rem;
-    --font-size-bigger: 4.3rem;
-    --font-size-extra-big: 6rem;
+  /* background-colors */
+  --gold-background: #cc9600;
+  --white-background: #ffffff;
+  --dark-blue-background: #087ca0;
+  --light-blue-background: #d6e3ea;
+  --semi-transparent-sections-background: #087ca092;
+  --sections-background: #8cb3c7;
 
-    /* line-height */
+  /* TEXT */
 
-    --line-height-med: 1.8;
+  /* font sizes */
+  --font-size-small: 1.3rem;
+  --font-size-med-small: 1.8rem;
+  --font-size-med: 2.3rem;
+  --font-size-big: 3.3rem;
+  --font-size-bigger: 4.3rem;
+  --font-size-extra-big: 6rem;
 
-    /* INDENTS */
+  /* line-height */
 
-   --indent-small: 50px;
-   --indent-med: 90px;
-   --indent-big: 150px;
-   --text-indent-small: 10px;
-   --text-indent-med: 30px;
+  --line-height-med: 1.8;
 
-    /* ELEMENTS */
+  /* INDENTS */
 
-    /* sections elements border-radius */
-    --elem-border-radius: 10px;
+  --indent-small: 50px;
+  --indent-med: 90px;
+  --indent-big: 150px;
+  --text-indent-small: 10px;
+  --text-indent-med: 30px;
 
-    /* sections elements shadow */
-    --element-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    --element-medium-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* ELEMENTS */
 
+  /* sections elements border-radius */
+  --elem-border-radius: 10px;
 
+  /* sections elements shadow */
+  --element-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  --element-medium-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
+  /* section indents */
+  --section-indent: 55px;
 
- 
+  --big-section-height: min(65vw, 680px);
 
+  /* text line-height */
+  --text-medium-line-height: 1.5;
 
+  /* text indents */
+  --text-container-indent-big: min(5vw, 55px);
+  --text-container-indent-medium: min(5vw, 34px);
+  --text-container-indent-small: min(5vw, 8px);
 
+  /* ELEMENTS */
 
+  /* sections elements indents */
+  --elem-indent-big: min(5vw, 55px);
+  --elem-indent-medium: min(3vw, 35px);
+  --elem-indent-small: min(1vw, 10px);
 
-    /* section indents */
-    --section-indent: 55px;
+  /* sections elements width */
+  --elem-medium-width: 75vw;
 
+  /* TRANSITIONS */
 
-    --big-section-height: min(65vw, 680px);
+  /* element appears when scrolling the page */
+  --scroll-transition: opacity 0.6s ease, transform 0.6s ease;
+  --scroll-transform-after: translateY(20px);
+  --scroll-transform-before: translateY(0px);
 
+  /* element magnification on hover */
+  --hover-element-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  --hover-element-transform: scale(1.1);
+  --hover-element-transition: transform 0.4s ease;
+  --hover-element-brightness: brightness(95%);
 
+  /* element evetns */
+  --event-element-transition: transform 0.4s ease;
 
+  /* expanding an element from top to bottom */
+  --top-to-bottom-elem-transition:
+    max-height 0.5s ease-out, opacity 0.5s ease-out, margin 0.5s ease-out;
 
-
-
-
-        /* text line-height */
-            --text-medium-line-height: 1.5;
-
-        /* text indents */
-            --text-container-indent-big: min(5vw, 55px);
-            --text-container-indent-medium: min(5vw, 34px);    
-            --text-container-indent-small: min(5vw, 8px);
-
-
-    /* ELEMENTS */
-
-        /* sections elements indents */
-            --elem-indent-big: min(5vw, 55px);;
-            --elem-indent-medium: min(3vw, 35px);
-            --elem-indent-small: min(1vw, 10px);
-
-  
-
-      
-
-        /* sections elements width */
-            --elem-medium-width: 75vw;
-
-    /* TRANSITIONS */
-
-        /* element appears when scrolling the page */
-        --scroll-transition: opacity 0.6s ease, transform 0.6s ease;
-        --scroll-transform-after: translateY(20px); 
-        --scroll-transform-before: translateY(0px); 
-
-        /* element magnification on hover */
-        --hover-element-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
-        --hover-element-transform: scale(1.1);
-        --hover-element-transition: transform 0.4s ease;
-        --hover-element-brightness: brightness(95%);
-
-        /* element evetns */
-        --event-element-transition: transform 0.4s ease;
-        
-        /* expanding an element from top to bottom */
-        --top-to-bottom-elem-transition: max-height 0.5s ease-out, opacity 0.5s ease-out, margin 0.5s ease-out; 
-
-        /* line stretching in 2 directions */
-        --line-stretching-transition: width 0.3s ease, left 0.3s ease; 
+  /* line stretching in 2 directions */
+  --line-stretching-transition: width 0.3s ease, left 0.3s ease;
 }
-
-
 
 /* @media (max-width: 1024px) {
     :root {
@@ -171,21 +152,18 @@ h1, h2, h3 {
 } */
 
 @media (max-width: 760px) {
-    :root {
-        --font-size-small: 1rem;
-        --font-size-med-small: 1.5rem;
-        --font-size-med: 2rem;
-        --font-size-big: 2.5rem;
-        --font-size-bigger: 3rem;
-        --font-size-extra-big: 5rem;
-
-     
-    }
-
+  :root {
+    --font-size-small: 1rem;
+    --font-size-med-small: 1.5rem;
+    --font-size-med: 2rem;
+    --font-size-big: 2.5rem;
+    --font-size-bigger: 3rem;
+    --font-size-extra-big: 5rem;
+  }
 }
 
 @media (max-width: 430px) {
- :root {
+  :root {
     --font-size-small: 1rem;
     --font-size-med-small: 1.2rem;
     --font-size-med: 1.7rem;
@@ -195,23 +173,8 @@ h1, h2, h3 {
 
     --indent-med: 50px;
     --indent-big: 100px;
-
-  
-
- }
-
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* @media (min-width: 900px) and (max-width: 1050px) {
     :root {
