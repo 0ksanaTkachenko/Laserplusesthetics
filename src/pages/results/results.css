@@ -118,6 +118,24 @@
   margin-left: 4px;
 }
 
+.compare-label {
+  position: absolute;
+  bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: var(--font-size-small);
+  background-color: rgba(255, 255, 255, 0.471);
+  color: var(--text-black);
+}
+
+.left-label {
+  left: 10px;
+}
+
+.right-label {
+  right: 10px;
+}
+
 /* footer */
 
 .results-footer {
@@ -162,6 +180,10 @@
 
   .results-container {
     margin-top: 120px;
+  }
+
+  .compare-label {
+    font-size: 15px;
   }
 }
 

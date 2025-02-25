@@ -11,21 +11,34 @@ import { useState } from 'react';
 import ModalAppointment from '@components/modalAppointment/modalAppointment';
 
 const ResultItem = ({ result }) => {
+  const [sliderPosition, setSliderPosition] = useState(0.5);
+
   return (
-    <div className="result-item d-flex flex-column justify-content-between h-auto">
+    <div className="result-item d-flex flex-column justify-content-between h-auto position-relative">
       <h2 className="result-title text-center mx-auto">{result.title}</h2>
-      <ReactCompareImage
-        leftImage={result.beforeImage}
-        rightImage={result.afterImage}
-        sliderLineColor="#d6e3ea"
-        handleSize={60}
-        handle={
-          <div className="compare-handle d-flex align-items-center justify-content-center cursor-pointer">
-            <div className="arrow-handle left-arrow"></div>
-            <div className="arrow-handle right-arrow"></div>
-          </div>
-        }
-      />
+
+      <div className="compare-wrapper position-relative">
+        <ReactCompareImage
+          leftImage={result.beforeImage}
+          rightImage={result.afterImage}
+          sliderLineColor="#d6e3ea"
+          handleSize={60}
+          sliderPositionPercentage={sliderPosition}
+          onSliderPositionChange={(position) => setSliderPosition(position)}
+          handle={
+            <div className="compare-handle d-flex align-items-center justify-content-center cursor-pointer">
+              <div className="arrow-handle left-arrow"></div>
+              <div className="arrow-handle right-arrow"></div>
+            </div>
+          }
+        />
+        {sliderPosition > 0.3 && (
+          <div className="compare-label left-label">Before</div>
+        )}
+        {sliderPosition < 0.7 && (
+          <div className="compare-label right-label">After</div>
+        )}
+      </div>
     </div>
   );
 };
