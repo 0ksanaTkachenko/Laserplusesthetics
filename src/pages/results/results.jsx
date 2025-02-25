@@ -82,7 +82,6 @@ const Results = () => {
           ))}
         </div>
       </div>
-
       <div className="results-footer d-flex justify-content-center align-items-center flex-column w-100">
         <p className="text-center">
           Healthy skin is an investment in your confidence and beauty.
