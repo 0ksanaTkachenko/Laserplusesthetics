@@ -1,7 +1,193 @@
 .results {
-    font-size: 50px;
-    height: 600px;
-    text-align: center;
-    padding-top: 100px;
+  gap: 150px;
+}
 
+/* header */
+
+.results-header-container {
+  height: 400px;
+}
+
+.results-background {
+  align-items: center;
+}
+
+.results-background img {
+  object-fit: cover;
+}
+
+.left-background {
+  background-color: var(--sections-background);
+}
+
+.right-background {
+  background-color: var(--light-blue-background);
+}
+
+.results-background h1 {
+  font-size: var(--font-size-bigger);
+  z-index: 100;
+  color: var(--gold-background);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.results-header-img {
+  object-fit: cover;
+  width: auto;
+}
+
+/* highlight */
+
+.results-highlight {
+  gap: 30px;
+}
+
+.results-highlight h1 {
+  font-size: var(--font-size-med);
+}
+
+.results-highlight p {
+  font-size: var(--font-size-small);
+  width: 80%;
+}
+
+.results-highlight-img {
+  width: 200px;
+  bottom: -20%;
+  right: 3%;
+  z-index: 10;
+}
+
+/* result items */
+
+.results-container {
+  gap: 10%;
+  width: 80%;
+  margin-top: 150px;
+}
+
+.result-item {
+  width: 45%;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--light-blue-background);
+  border-radius: 10px;
+}
+
+.result-title {
+  font-size: var(--font-size-med-small);
+  padding-bottom: 15px;
+}
+
+.result-item img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  display: block;
+  border-radius: 20px;
+}
+
+.compare-handle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #d6e3ea;
+  border: 2px solid #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.compare-handle:hover {
+  background-color: #b5cdd8;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-handle {
+  width: 0;
+  height: 0;
+  border-width: 9px;
+  border-style: solid;
+}
+
+.left-arrow {
+  border-color: transparent #fff transparent transparent;
+  margin-right: 4px;
+}
+
+.right-arrow {
+  border-color: transparent transparent transparent #fff;
+  margin-left: 4px;
+}
+
+/* footer */
+
+.results-footer {
+  gap: 20px;
+}
+
+.results-footer p {
+  font-size: var(--font-size-small);
+}
+
+.results-footer h1 {
+  font-size: var(--font-size-med-small);
+}
+
+.book-now-btn {
+  width: 70%;
+}
+
+@media (max-width: 1200px) {
+  .results-background {
+    align-items: end;
+  }
+
+  .results-background h1 {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .results-highlight p {
+    width: 100%;
+  }
+
+  .results {
+    gap: 120px;
+  }
+
+  .results-highlight-img {
+    width: 170px;
+    right: -10%;
+  }
+
+  .results-container {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 769px) {
+  .results-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result-item {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .results-background h1 {
+    font-size: var(--font-size-big);
+  }
+
+  .results-highlight-img {
+    width: 150px;
+    bottom: -25%;
+    right: 0px;
+  }
+
+  .result-item {
+    padding: 10px;
+  }
 }

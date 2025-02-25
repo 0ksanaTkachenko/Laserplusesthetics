@@ -2,7 +2,6 @@
 import './servicesGroup.css';
 import useIsMobile from '../../../hooks/useIsMobile';
 
-
 const ServiceItem = ({ service, isMobile, setClickedСategory, subServicesRef }) => {
     const isEven = service.id % 2 === 0;
 
@@ -11,10 +10,8 @@ const ServiceItem = ({ service, isMobile, setClickedСategory, subServicesRef })
         if (subServicesRef.current) {
             subServicesRef.current.scrollIntoView({ behavior: 'smooth' });
         }
-
     }
    
-  
     const servImg = (
         <div className="services-item-img">
             <img src={service.img} className="img-fluid w-100 h-100" alt={service.category} />

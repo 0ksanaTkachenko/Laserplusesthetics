@@ -5,8 +5,6 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import cosmetologyImg from '@assets/images/cosmetology-form.png'
 
-
-
 const validationSchema = Yup.object({
     name: Yup.string().min(2, 'Too short!').required('Required'),
     phone: Yup.string()

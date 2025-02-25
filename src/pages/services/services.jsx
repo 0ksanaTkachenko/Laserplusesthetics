@@ -14,7 +14,6 @@ const ServicesPage = () => {
     const subServicesRef = useRef(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    
     return (
         <div className="services-page d-flex flex-column">
             <div className="servises-header d-flex position-relative">
@@ -45,8 +44,8 @@ const ServicesPage = () => {
             <div className='services-main'>
                 <ServicesGroup subServicesRef={subServicesRef} setClickedСategory={setClickedСategory} services={services} />  
                 <ServiceFilter subServicesRef={subServicesRef} clickedСategory={clickedСategory} />  
-                <div className='book-now' onClick={() => setIsModalOpen(true)}>
-                    <div className='book-now-img'></div>
+                <div className='book-now d-flex justify-content-center' onClick={() => setIsModalOpen(true)}>
+                    <div className='book-now-img position-relative'></div>
                 </div>
                  <ModalAppointment isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             </div>
