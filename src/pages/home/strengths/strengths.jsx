@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import useScrollAnimation from '@hooks/useScrollAnimation'
 import './strengths.css';
 import SectionHeader from '../../../components/sectionHeader/sectionHeader';
 import educationIcon from '@assets/images/HomePage/strengths-section/education-icon.png';
@@ -9,43 +8,35 @@ import cosmeticsIcon from '@assets/images/HomePage/strengths-section/cosmetics-i
 import careIcon from '@assets/images/HomePage/strengths-section/care-icon.png';
 
 const strengthsData = [
-    { icon: educationIcon, text: 'Medical Education' },
-    { icon: experienceIcon, text: '10+ Years of Experience' },
-    { icon: certifiedIcon, text: 'Certified Specialist' },
-    { icon: cosmeticsIcon, text: 'Professional Cosmetics' },
-    { icon: careIcon, text: 'Personalized Care' }
+  { icon: educationIcon, text: 'Medical Education' },
+  { icon: experienceIcon, text: '10+ Years of Experience' },
+  { icon: certifiedIcon, text: 'Certified Specialist' },
+  { icon: cosmeticsIcon, text: 'Professional Cosmetics' },
+  { icon: careIcon, text: 'Personalized Care' },
 ];
 
 const StrengthsItem = ({ icon, text }) => {
-    return (
-        <div className="strengths-item">
-            <img src={icon} alt="" />
-            <p>{text}</p>
-        </div>
-    ); 
+  return (
+    <div className="strengths-item">
+      <img src={icon} alt="" />
+      <p>{text}</p>
+    </div>
+  );
 };
 
 const Strengths = () => {
-    useScrollAnimation('.strengths-item-container');
-
-    return (
-        <section className='strengths-section'>
-            <SectionHeader
-                p={'Why Choose Us'}
-                h2={'Our Strengths'}
-            />
-            <div className="strengths-container">
-                {strengthsData.map((item, index) => (
-                    <div className="strengths-item-container" key={index}>
-                        <StrengthsItem
-                            icon={item.icon}
-                            text={item.text}
-                        />
-                    </div>
-                ))}
-            </div>
-        </section>
-    );
+  return (
+    <section className="strengths-section">
+      <SectionHeader p={'Why Choose Us'} h2={'Our Strengths'} />
+      <div className="strengths-container">
+        {strengthsData.map((item, index) => (
+          <div className="strengths-item-container" key={index}>
+            <StrengthsItem icon={item.icon} text={item.text} />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default Strengths;

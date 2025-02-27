@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './global.css';
 import useIsMobile from '@hooks/useIsMobile';
 import MobileHeader from '@components/Header/MobileHeader/MobileHeader';
+import routes from './data/routes';
 
 const App = () => {
   const isMobile = useIsMobile(700);
@@ -22,20 +23,11 @@ const App = () => {
         <div className="container">
           {isMobile ? <MobileHeader /> : <Header />}
           <Routes>
-            <Route path="/Laserplusesthetics/" element={<HomePage />} />
-            <Route path="/Laserplusesthetics/about" element={<AboutPage />} />
-            <Route
-              path="/Laserplusesthetics/services"
-              element={<ServicesPage />}
-            />
-            <Route
-              path="/Laserplusesthetics/results"
-              element={<ResultsPage />}
-            />
-            <Route
-              path="/Laserplusesthetics/contacts"
-              element={<ContactsPage />}
-            />
+            <Route path={routes.home} element={<HomePage />} />
+            <Route path={routes.about} element={<AboutPage />} />
+            <Route path={routes.services} element={<ServicesPage />} />
+            <Route path={routes.results} element={<ResultsPage />} />
+            <Route path={routes.contacts} element={<ContactsPage />} />
           </Routes>
           <Footer />
         </div>

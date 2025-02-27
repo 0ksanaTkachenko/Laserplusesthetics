@@ -1,0 +1,35 @@
+.results-section {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 100px 50px;
+  /* background-color: var(--sections-background); */
+}
+
+.result-section-text {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-section-text h1 {
+  font-size: var(--font-size-med);
+}
+
+.result-section-text p {
+  font-size: var(--font-size-small);
+  text-align: center;
+}
+
+.example-result {
+  width: 35%;
+}
+
+.example-result .result-item {
+  width: 100%;
+}

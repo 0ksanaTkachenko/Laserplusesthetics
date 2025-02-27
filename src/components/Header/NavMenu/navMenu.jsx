@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
 import './NavMenu.css';
 import { NavLink } from 'react-router-dom';
+import routes from '../../../data/routes';
 
 const MenuComponent = ({ mobileMenuClicked }) => {
   return (
     <nav className="nav-menu">
       <NavLink
         onClick={mobileMenuClicked}
-        to="/Laserplusesthetics/"
+        to={routes.home}
         end
         className="nav-item"
       >
@@ -15,28 +16,28 @@ const MenuComponent = ({ mobileMenuClicked }) => {
       </NavLink>
       <NavLink
         onClick={mobileMenuClicked}
-        to="/Laserplusesthetics/about"
+        to={routes.about}
         className="nav-item"
       >
         About
       </NavLink>
       <NavLink
         onClick={mobileMenuClicked}
-        to="/Laserplusesthetics/services"
+        to={routes.services}
         className="nav-item"
       >
         Services
       </NavLink>
       <NavLink
         onClick={mobileMenuClicked}
-        to="/Laserplusesthetics/results"
+        to={routes.results}
         className="nav-item"
       >
         Results
       </NavLink>
       <NavLink
         onClick={mobileMenuClicked}
-        to="/Laserplusesthetics/contacts"
+        to={routes.contacts}
         className="nav-item"
       >
         Contacts

@@ -1,0 +1,39 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--sections-background);
+  padding: 30px;
+  border-radius: 0 50px 0 50px;
+  gap: 30px;
+}
+
+.contact-section h1 {
+  color: var(--text-white);
+  font-size: var(--font-size-med);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Чёрная тень для выделения */
+}
+
+.contact-section-p {
+  font-size: var(--font-size-small);
+  text-align: center;
+  width: 90%;
+  color: var(--text-white);
+}
+
+.more-faq-link::after {
+  content: '';
+  position: absolute;
+  left: -30px;
+  bottom: -5px;
+  width: calc(100% + 60px);
+  height: 4px;
+  background-color: var(--text-gold);
+  transition: var(--line-stretching-transition);
+}
+
+.more-faq-link:hover::after {
+  left: -60px;
+  width: calc(100% + 120px);
+}
