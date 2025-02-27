@@ -17,7 +17,7 @@ const validationSchema = Yup.object({
   consent: Yup.bool().oneOf([true], 'You must agree to data processing'),
 });
 
-const AppointmentForm = ({ onSubmit }) => {
+const AppointmentForm = ({ onSubmit, isformSmall = false }) => {
   return (
     <Formik
       initialValues={{
@@ -37,7 +37,7 @@ const AppointmentForm = ({ onSubmit }) => {
       }}
     >
       {({ isSubmitting }) => (
-        <Form className="appointment-form">
+        <Form className={`appointment-form ${isformSmall ? 'small-form' : ''}`}>
           <img src={cosmetologyImg} className="cosmetology-img" alt="" />
           <div className="form-content">
             <div>

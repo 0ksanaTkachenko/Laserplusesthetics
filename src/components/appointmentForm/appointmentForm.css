@@ -5,7 +5,13 @@
 
 .modal-content {
   border-radius: 25px;
-  height: 65vh;
+  height: 500px;
+  background-color: var(--light-blue-background);
+}
+
+.appointment-form {
+  border-radius: 25px;
+  height: 400px;
   background-color: var(--light-blue-background);
 }
 
