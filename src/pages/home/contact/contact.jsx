@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import './contact.css';
-import GoldButton from '../../../components/GoldButton/GoldButton';
+import GoldButton from '../../../components/goldButton/goldButton';
 import useScrollTo from '../../../hooks/useScrollTo';
 import routes from '../../../data/routes';
 
