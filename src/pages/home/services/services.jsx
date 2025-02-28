@@ -34,7 +34,7 @@ const Services = () => {
             </h1>
           )}
           <p className="section-text">
-            I focus on providing exceptional service and personalized care. Our
+            I focus on providing exceptional service and personalized care. My
             goal is to ensure your well-being and comfort, offering the best in
             beauty treatments.
           </p>
