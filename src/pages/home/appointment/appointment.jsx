@@ -6,7 +6,6 @@ import GoldButton from '@components/goldbutton/goldbutton'
 import { useState } from 'react';
 
 const Appointment = () => {
-
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (

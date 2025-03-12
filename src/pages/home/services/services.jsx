@@ -9,7 +9,7 @@ import useScrollTo from '../../../hooks/useScrollTo';
 import routes from '../../../data/routes';
 
 const Services = () => {
-  const isMobile = useIsMobile(1000);
+  const isMobile = useIsMobile(1024);
   const { navigateScrollToTop } = useScrollTo();
 
   return (

@@ -9,6 +9,9 @@ import ServiceFilter from './serviceFilter/serviceFilter';
 import { useState, useRef } from 'react';
 import ModalAppointment from '@components/modalAppointment/modalAppointment';
 
+
+
+
 const ServicesPage = () => {
     const [clickedСategory, setClickedСategory] = useState(null)
     const subServicesRef = useRef(null);

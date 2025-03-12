@@ -105,22 +105,23 @@
   border-radius: 10px;
 }
 
-.appointment-form {
+/* .appointment-form {
   padding: 30px;
-}
+} */
 
 .contacts-main {
   display: flex;
   gap: 30px;
-  height: 550px;
+  height: 450px;
   margin-bottom: 150px;
 }
 
 .small-form {
   height: 100%;
+  padding: 50px !important;
 }
 
-.small-form .cosmetology-img {
+/* .small-form .cosmetology-img {
   position: absolute;
   width: 300px;
   height: auto;
@@ -138,9 +139,9 @@
 
 .small-form .modal-content {
   height: 600px;
-}
+} */
 
-.small-form .modal-dialog {
+/* .small-form .modal-dialog {
   width: 90vw;
   max-width: 90vw;
   margin: 0 auto;
@@ -149,13 +150,13 @@
 .small-form form {
   font-size: 10px;
   justify-content: flex-start;
-}
+} */
 
 .call-btn {
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .contacts-main {
     flex-direction: column;
     height: 1000px;
@@ -174,7 +175,7 @@
 @media (max-width: 763px) {
   .contacts-main {
     flex-direction: column;
-    height: 1200px;
+    /* height: 1200px; */
     padding: 0;
   }
 
