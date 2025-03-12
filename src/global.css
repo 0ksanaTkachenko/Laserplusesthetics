@@ -51,6 +51,7 @@ h3 {
   --text-gold: #cc9600;
   --hover-text-color: #cc9600;
   --text-white: #ffffff;
+  --hover-text-white: #cccccc;
   --text-black: #000000;
 
   /* elements colors */
@@ -69,7 +70,7 @@ h3 {
   /* TEXT */
 
   /* font sizes */
-  --font-size-extra-small: 0.2rem;
+  --font-size-extra-small: 0.9rem;
   --font-size-small: 1.3rem;
   --font-size-med-small: 1.8rem;
   --font-size-med: 2.3rem;
