@@ -1,40 +1,28 @@
-.faq-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
+.faq-section .WhiteBg-text-container {
+  margin-bottom: 0px;
 }
-
-.faq-section .WhiteBg-text-container{
-    margin-bottom: 0px;
-}
-
-/* .faq-section .faq-item-container {
-    width: 90%;
-} */
 
 .more-faq-link {
-    text-decoration: none;
-    color: var(--text-gold);
-    position: relative;  
-    font-size: var(--font-size-small);
-    background-color: transparent;
-    border: none; 
+  text-decoration: none;
+  color: var(--text-gold);
+  position: relative;
+  font-size: var(--font-size-small);
+  background-color: transparent;
+  border: none;
 }
 
 .more-faq-link::after {
-    content: '';
-    position: absolute;
-    left: -30px; 
-    bottom: -5px; 
-    width: calc(100% + 60px);
-    height: 4px; 
-    background-color: var(--text-gold);
-    transition: var(--line-stretching-transition); 
+  content: '';
+  position: absolute;
+  left: -30px;
+  bottom: -5px;
+  width: calc(100% + 60px);
+  height: 4px;
+  background-color: var(--text-gold);
+  transition: var(--line-stretching-transition);
 }
 
 .more-faq-link:hover::after {
-    left: -60px; 
-    width: calc(100% + 120px); 
+  left: -60px;
+  width: calc(100% + 120px);
 }

@@ -1,17 +1,12 @@
 .gold-button {
-    background-color: var(--gold-element);
-    color: var(--text-white);
-    border: none;
-    cursor: pointer;
-    font-size: var(--font-size-small);
-    border-radius: var(--elem-border-radius);
-    display: block;
-    margin: 0 auto;
-    box-shadow: var(--element-medium-shadow);
-    padding: 20px;
+  background-color: var(--gold-element);
+  color: var(--text-white);
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  border-radius: var(--elem-border-radius);
+  display: block;
+  margin: 0 auto;
+  box-shadow: var(--element-medium-shadow);
+  padding: 20px;
 }
-
-
-
-
-

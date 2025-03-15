@@ -1,106 +1,91 @@
-.strengths-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 .strengths-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
 }
 
 .strengths-item {
-    background-color: var(--sections-background);
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--sections-background);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  flex-direction: column;
 }
 
 .strengths-item img {
-    width: 50%;
-    margin-bottom: 15px;
+  width: 50%;
+  margin-bottom: 15px;
 }
 
 .strengths-item p {
-    color: var(--text-white);
-    font-size: 18px;
-    margin: 0;
-    line-height: 1.4;
-    max-width: 70%;
+  color: var(--text-white);
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.4;
+  max-width: 70%;
 }
 
-
 @media (max-width: 1024px) {
+  .strengths-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-    .strengths-container {
-        justify-content: center; 
-        flex-wrap: wrap;
-    }
-    
-    .strengths-item {
-        width: 160px;
-        height: 160px;
-    }
+  .strengths-item {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 @media (max-width: 550px) {
-    .strengths-container {
-        width: 100%;  
-        padding: 0 var(--elem-indent-big);
-        flex-direction: column;
-    }  
+  .strengths-container {
+    width: 100%;
+    padding: 0 var(--elem-indent-big);
+    flex-direction: column;
+  }
 
-    .strengths-item-container {
-        display: flex;
-        gap: 0;
-    }
+  .strengths-item-container {
+    display: flex;
+    gap: 0;
+  }
 
-    .strengths-item {
-        width: 100%;
-        height: min(20vw, 100px);
-        border-radius: 0;
-        background-color: transparent;
-        display: flex;
-        flex-direction: row;
-    }
+  .strengths-item {
+    width: 100%;
+    height: min(20vw, 100px);
+    border-radius: 0;
+    background-color: transparent;
+    flex-direction: row;
+  }
 
-    .strengths-item img {
-       background-color: var(--sections-background);
-        width: auto;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        margin: 0;
-    }
+  .strengths-item img {
+    background-color: var(--sections-background);
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+  }
 
-    .strengths-item p {
-        font-size: var(--body-text);
-        color: var(--text-black);
-        display: flex; 
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-        max-height: 100px;
-        box-shadow: var(--element-medium-shadow);
-        margin: 0 auto;
-    }
+  .strengths-item p {
+    font-size: var(--body-text);
+    color: var(--text-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100px;
+    box-shadow: var(--element-medium-shadow);
+    margin: 0 auto;
+  }
 
-    .strengths-item:hover {
-        transform: none;
-        box-shadow: none;
-    }
-    
-    .strengths-item:hover img {
-        transform: none;
-    }
+  .strengths-item:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .strengths-item:hover img {
+    transform: none;
+  }
 }

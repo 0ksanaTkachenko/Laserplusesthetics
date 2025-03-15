@@ -6,7 +6,7 @@ import emailIcon from '@assets/images/icons/email-icon.png';
 import instagramIcon from '@assets/images/icons/instagram.png';
 import telegramIcon from '@assets/images/icons/telegram.png';
 import whatsappIcon from '@assets/images/icons/whatsapp.png';
-import AppointmentForm from '../../components/appointmentForm/appointmentForm';
+import AppointmentForm from '@components/appointmentForm/appointmentForm';
 
 const GoogleMap = () => {
   return (
@@ -15,7 +15,6 @@ const GoogleMap = () => {
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.9376122226486!2d-79.47174818831711!3d43.77415387097593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2de2693b8ea5%3A0xfb0a3c45f6c0f201!2zNDY0NiBEdWZmZXJpbiBTdCwgTm9ydGggWW9yaywgT04gTTNIIDVTNCwg0JrQsNC90LDQtNCw!5e0!3m2!1sru!2s!4v1740654427178!5m2!1sru!2s"
         allowFullScreen=""
         loading="lazy"
-        // referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
   );

@@ -1,8 +1,4 @@
 .contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   background-color: var(--sections-background);
   padding: 30px;
   border-radius: 0 50px 0 50px;
@@ -12,12 +8,11 @@
 .contact-section h1 {
   color: var(--text-white);
   font-size: var(--font-size-med);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Чёрная тень для выделения */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .contact-section-p {
   font-size: var(--font-size-small);
-  text-align: center;
   width: 90%;
   color: var(--text-white);
 }
