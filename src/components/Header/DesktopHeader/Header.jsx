@@ -19,7 +19,7 @@ const Header = () => {
         </div>
       </div>
       <div className="header-container">
-        <div className="header-inner-container">
+        <div className="header-inner-container d-flex align-items-center justify-content-between">
           <NavLink to={routes.home}>
             <img src={logo} alt="Logo" className="logo" />
           </NavLink>

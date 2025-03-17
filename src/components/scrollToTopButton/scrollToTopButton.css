@@ -1,0 +1,12 @@
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+}

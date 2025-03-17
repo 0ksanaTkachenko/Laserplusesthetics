@@ -12,6 +12,7 @@ import './global.css';
 import useIsMobile from '@hooks/useIsMobile';
 import MobileHeader from '@components/Header/MobileHeader/MobileHeader';
 import routes from './data/routes';
+import ScrollToTopButton from './components/scrollToTopButton/scrollToTopButton';
 
 const App = () => {
   const isMobile = useIsMobile(700);
@@ -29,6 +30,7 @@ const App = () => {
             <Route path={routes.results} element={<ResultsPage />} />
             <Route path={routes.contacts} element={<ContactsPage />} />
           </Routes>
+          <ScrollToTopButton />
           <Footer />
         </div>
         <div className="sidebars"></div>

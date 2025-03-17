@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import './faq.css';
 import { useState } from 'react';
-import FAQData from '../../../data/faq';
-import FaqItem from '../../../components/faqItem/faqItem';
+import FAQData from '@data/faq';
+import FaqItem from '@components/faqItem/faqItem';
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import certificates from '../../../data/certificates';
-import Slider from "react-slick";
+import certificates from '@data/certificates';
+import Slider from 'react-slick';
 
 const CustomNextArrow = (props) => {
   const { onClick } = props;
@@ -14,19 +14,19 @@ const CustomPrevArrow = (props) => {
 
 const CertificateCarousel = () => {
   const settings = {
-    infinite: true, 
-    speed: 500, 
-    slidesToShow: 3, 
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <CustomNextArrow />, 
+    nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
     responsive: [
       {
-        breakpoint: 768, 
+        breakpoint: 768,
         settings: {
-          slidesToShow: 1, 
+          slidesToShow: 1,
           slidesToScroll: 1,
-        }
+        },
       },
     ],
   };
