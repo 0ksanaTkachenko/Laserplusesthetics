@@ -7,6 +7,16 @@ const animations = {
     scale: 1.2,
     transition: { duration: 0.3 },
   },
+  hoverInnerShadow: {
+    boxShadow: `
+          inset 0 0 25px rgba(0, 0, 0, 0.6),
+          0 4px 15px rgba(0, 0, 0, 0.2)
+        `,
+    transition: {
+      duration: 0.5,
+      ease: 'easeInOut',
+    },
+  },
   tap: {
     scale: 0.9,
   },
