@@ -74,6 +74,7 @@
 
 .book-now-btn {
   width: 70%;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {

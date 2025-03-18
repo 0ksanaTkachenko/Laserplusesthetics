@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import results from '../../data/results';
+import results from '@data/results';
 import './results.css';
 import headerImg from '@assets/images/resultsPage/header-img.png';
 import servicesHeaderLeft from '@assets/images/resultsPage/services-header-left.png';
@@ -7,8 +7,10 @@ import servicesHeaderRight from '@assets/images/resultsPage/services-header-righ
 import servicesHighlight from '@assets/images/resultsPage/services-highlight.png';
 import bookNowBtn from '@assets/images/resultsPage/book-now-btn.png';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+import animations from '@data/animations';
 import ModalAppointment from '@components/modalAppointment/modalAppointment';
-import ResultItem from '../../components/resultItem/resultItem';
+import ResultItem from '@components/resultItem/resultItem';
 
 const Results = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,7 +19,14 @@ const Results = () => {
     <div className="results d-flex flex-column">
       <div className="results-header-container d-flex position-relative">
         <div className="results-background left-background w-50 d-flex justify-content-center position-relative">
-          <h1>Before</h1>
+          <motion.h1
+            variants={animations.slideFromLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            Before
+          </motion.h1>
           <img
             src={servicesHeaderLeft}
             className="img-fluid position-absolute w-100 h-auto bottom-0"
@@ -25,7 +34,14 @@ const Results = () => {
           />
         </div>
         <div className="results-background right-background w-50 d-flex justify-content-center position-relative">
-          <h1>After</h1>
+          <motion.h1
+            variants={animations.slideFromRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            After
+          </motion.h1>
           <img
             src={servicesHeaderRight}
             className="img-fluid img-fluid position-absolute w-100 h-auto bottom-0"
@@ -39,7 +55,13 @@ const Results = () => {
         />
       </div>
       <div className="results-main">
-        <div className="results-highlight d-flex flex-column justify-content-center align-items-center text-center position-relative">
+        <motion.div
+          className="results-highlight d-flex flex-column justify-content-center align-items-center text-center position-relative"
+          variants={animations.fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           <h1>Real Results from My Clients </h1>
           <p>
             Discover the transformative power of my treatments at Laser Plus
@@ -55,7 +77,8 @@ const Results = () => {
             className="results-highlight-img img-fluid position-absolute"
             alt=""
           />
-        </div>
+        </motion.div>
+
         <div className="results-container d-flex flex-wrap mx-auto">
           {results.map((result) => (
             <ResultItem key={result.id} result={result} />
@@ -69,9 +92,14 @@ const Results = () => {
         <h1 className="text-center">
           Ready for your own “before & after” moment?
         </h1>
-        <img
-          src={bookNowBtn}
+        <motion.img
           className="book-now-btn h-auto"
+          variants={animations.itemVariants}
+          whileHover={animations.hover}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          src={bookNowBtn}
           alt=""
           onClick={() => setIsModalOpen(true)}
         />
