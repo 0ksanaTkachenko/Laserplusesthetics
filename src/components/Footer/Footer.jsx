@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="footer-line"></hr>
-        <div className="">
+        <div>
           <p className="footer-credits text-center">
             © {new Date().getFullYear()} Laserplusesthetics. All rights
             reserved. Some design elements created using Canva Pro. Images/icons
