@@ -1,11 +1,11 @@
 import './contacts.css';
+import { motion } from 'framer-motion';
+import animations from '@data/animations';
 import contactsHeader from '@assets/images/contactsPage/contacts-header.png';
 import phoneIcon from '@assets/images/icons/phone-icon.png';
 import locationIcon from '@assets/images/icons/location-icon.png';
 import emailIcon from '@assets/images/icons/email-icon.png';
-import instagramIcon from '@assets/images/icons/instagram.png';
-import telegramIcon from '@assets/images/icons/telegram.png';
-import whatsappIcon from '@assets/images/icons/whatsapp.png';
+import socialsMedia from '@data/socialsMedia';
 import AppointmentForm from '@components/appointmentForm/appointmentForm';
 
 const GoogleMap = () => {
@@ -23,13 +23,24 @@ const GoogleMap = () => {
 const ContactsPage = () => {
   return (
     <div className="contacts">
-      <div className="contacts-header">
+      <div className="contacts-header d-flex">
         <div className="contacts-img-container">
-          <img src={contactsHeader} className="img-fluid w-100 h-100" alt="" />
+          <img
+            src={contactsHeader}
+            className="img-fluid w-100 h-100 object-fit-cover"
+            alt=""
+          />
         </div>
-        <div className="contacts-header-text">
-          <h1>Contacts</h1>
-          <div className="contacts-items">
+        <div className="contacts-header-text d-flex flex-column align-items-center justify-content-between">
+          <motion.h1
+            variants={animations.fadeIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            Contacts
+          </motion.h1>
+          <div className="contacts-items d-flex flex-column">
             <div className="contact-item">
               <img src={locationIcon} alt="Location" className="contact-icon" />
               <p>4646 Dufferin St Unit 1, North York, ON</p>
@@ -43,16 +54,36 @@ const ContactsPage = () => {
               <p>sampleEmail@gmail.com</p>
             </div>
           </div>
-          <div className="social-media-container">
-            <img src={instagramIcon} alt="" />
-            <img src={telegramIcon} alt="" />
-            <img src={whatsappIcon} alt="" />
+          <div className="social-media-container d-flex justify-content-around">
+            {socialsMedia.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <motion.img
+                  custom={index}
+                  variants={animations.itemVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  src={social.icon}
+                  alt={social.name}
+                  whileHover={{
+                    scale: 1.2,
+                    transition: { duration: 0.3 },
+                  }}
+                  className="cursor-pointer"
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>
-      <div className="contacts-highlight">
+      <div className="contacts-highlight d-flex justify-content-center align-items-center flex-column">
         <h2>Let’s Connect!</h2>
-        <p>
+        <p className="text-center">
           Have questions about skincare or want to book an appointment? I’m here
           to help! Whether you’re looking for expert advice, personalized
           treatments, or just want to learn more about my services, feel free to
@@ -63,9 +94,25 @@ const ContactsPage = () => {
           📞 Call Now
         </a>
       </div>
-      <div className="contacts-main">
-        <AppointmentForm isformSmall={true} />
-        <GoogleMap />
+      <div className="contacts-main d-flex">
+        <motion.div
+          className="contacts-form"
+          variants={animations.slideFromLeft}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <AppointmentForm isformSmall={true} />
+        </motion.div>
+        <motion.div
+          className="contacts-map"
+          variants={animations.slideFromRight}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <GoogleMap />
+        </motion.div>
       </div>
     </div>
   );
