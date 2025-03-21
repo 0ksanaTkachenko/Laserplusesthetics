@@ -9,17 +9,11 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '@components': fileURLToPath(
-        new URL('./src/components', import.meta.url),
+        new URL('./src/components', import.meta.url)
       ),
-      '@assets': fileURLToPath(
-        new URL('./src/assets', import.meta.url),
-      ),
-      '@pages': fileURLToPath(
-        new URL('./src/pages', import.meta.url),
-      ),
-      '@hooks': fileURLToPath(
-        new URL('./src/hooks', import.meta.url),
-      ),
+      '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
+      '@pages': fileURLToPath(new URL('./src/pages', import.meta.url)),
+      '@hooks': fileURLToPath(new URL('./src/hooks', import.meta.url)),
       '@data': fileURLToPath(new URL('./src/data', import.meta.url)),
     },
   },

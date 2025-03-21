@@ -3,24 +3,49 @@
   max-width: 70vw;
 }
 
-.modal-content {
+/* .modal-content {
   border-radius: 25px;
   height: 500px;
   background-color: var(--light-blue-background);
+} */
+
+.modal-content {
+  border-radius: 25px;
+  min-height: 500px;
+  background-color: var(--light-blue-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.appointment-form {
+/* .appointment-form {
   padding: 0px 50px !important;
   border-radius: 25px;
   height: 400px;
   background-color: var(--light-blue-background);
   gap: 20px;
+} */
+
+.appointment-form {
+  padding: 0px 50px !important;
+  border-radius: 25px;
+  background-color: var(--light-blue-background);
+  gap: 20px;
+  flex-wrap: wrap;
 }
+
+/* .form-content {
+  width: 60%;
+  flex-direction: column;
+  justify-content: space-between;
+} */
 
 .form-content {
   width: 60%;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
+  min-width: 300px;
 }
 
 .form-main {
@@ -64,9 +89,17 @@
   width: 70%;
 }
 
+/* .form-img-container {
+  width: 40%;
+  display: flex;
+} */
+
 .form-img-container {
   width: 40%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
 }
 
 .cosmetology-img {
@@ -85,6 +118,14 @@
   z-index: 10;
   border: none;
   border-radius: 20px;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.modal-btn:hover {
+  background-color: var(--gold-element);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .form-content .error {
@@ -97,9 +138,21 @@
   width: 100%;
 }
 
+.privacy-inline-note {
+  display: block;
+  margin-top: 4px;
+  color: #555;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 @media (max-width: 973px) {
+  .privacy-inline-note {
+    width: 70%;
+  }
+
   .modal-body {
-    height: 90%;
+    height: 50%;
   }
 
   .appointment-form {
@@ -109,20 +162,25 @@
   }
 
   .cosmetology-img {
-    width: 30%;
-    object-position: top;
-    margin: 0px;
+    width: 40%; /* Занимает всю ширину контейнера */
+    height: 100%; /* Полностью заполняет контейнер по высоте */
+    object-fit: cover; /* Обрезка по контейнеру */
+    object-position: top; /* Приоритет – верх картинки */
+    margin: 0;
   }
 
   .form-img-container {
     width: 100%;
-    height: 55%;
+    max-height: 200px; /* Ограничиваем высоту */
+    height: auto;
+    overflow: hidden; /* Обрезаем всё, что выходит за границы */
     justify-content: end;
+    display: flex;
   }
 
   .form-content {
     width: 100%;
-    height: 45%;
+    height: auto;
   }
 
   .modal-footer {
@@ -152,7 +210,13 @@
 
 @media (max-width: 540px) {
   .modal-content {
-    height: 550px;
+    height: 570px;
+  }
+
+  .privacy-inline-note {
+    font-size: 10px;
+    line-height: 1;
+    width: 100%;
   }
 
   .form-img-container {
@@ -161,12 +225,13 @@
   }
 
   .cosmetology-img {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
   }
 
   .form-content {
     height: 50%;
+    min-width: auto;
   }
 
   .form-footer {

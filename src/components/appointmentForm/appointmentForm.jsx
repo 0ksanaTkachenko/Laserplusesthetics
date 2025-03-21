@@ -3,6 +3,7 @@ import './appointmentForm.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import cosmetologyImg from '@assets/images/cosmetology-form.png';
+import { useState } from 'react';
 
 const validationSchema = Yup.object({
   name: Yup.string().min(2, 'Too short!').required('Required'),
@@ -17,7 +18,53 @@ const validationSchema = Yup.object({
   consent: Yup.bool().oneOf([true], 'You must agree to data processing'),
 });
 
-const AppointmentForm = ({ onSubmit, isformSmall = false }) => {
+const AppointmentForm = ({ isformSmall = false }) => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const TELEGRAM_TOKEN = '8002788686:AAF4KhOZs96u60QHTliHneJC6qSUWgPqjds';
+  const TELEGRAM_CHAT_ID = '618161386';
+
+  const handleSubmit = (values, { resetForm }) => {
+    if (values.botcheck) return;
+
+    const message = `📩 Appointment Request:
+  👤 Name: ${values.name}
+  📞 Phone: ${values.phone}
+  📧 Email: ${values.email}
+  🌐 Language: ${values.preferredLanguage}
+  📝 Comments: ${values.comments || 'No comments.'}`;
+
+    fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: TELEGRAM_CHAT_ID,
+        text: message,
+        parse_mode: 'Markdown',
+      }),
+    })
+      .then((res) => {
+        if (res.ok) {
+          alert('Message sent via Telegram!');
+        } else {
+          alert('Failed to send message.');
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        alert('Network error.');
+      });
+
+    setIsSubmitted(true); // блокировка повторной отправки
+    console.log('Sending values:', values);
+
+    resetForm();
+
+    setTimeout(() => {
+      setIsSubmitted(false); // разблокировка через 10 сек
+    }, 10000);
+  };
+
   return (
     <Formik
       initialValues={{
@@ -27,14 +74,12 @@ const AppointmentForm = ({ onSubmit, isformSmall = false }) => {
         preferredLanguage: '',
         comments: '',
         consent: false,
+        botcheck: '',
       }}
       validationSchema={validationSchema}
       validateOnChange={false}
       validateOnBlur={false}
-      onSubmit={(values, { resetForm }) => {
-        onSubmit(values);
-        resetForm();
-      }}
+      onSubmit={handleSubmit}
     >
       {({ isSubmitting }) => (
         <Form
@@ -42,6 +87,7 @@ const AppointmentForm = ({ onSubmit, isformSmall = false }) => {
         >
           <div className="form-content d-flex">
             <div className="form-main">
+              {/* Поля формы */}
               <div>
                 <label>Full Name</label>
                 <Field type="text" name="name" className="form-control" />
@@ -89,20 +135,23 @@ const AppointmentForm = ({ onSubmit, isformSmall = false }) => {
                   className="form-check-input"
                 />
                 <label className="form-check-label">
-                  I agree to data processing.
+                  I agree to the processing of my personal data in accordance
+                  with the Privacy Policy.
+                  <br />
+                  <small className="privacy-inline-note">
+                    We collect your data only to process appointments and
+                    contact you. Your information is securely stored and never
+                    shared with third parties.
+                  </small>
                 </label>
               </div>
               <ErrorMessage name="consent" component="div" className="error" />
             </div>
             <div className="form-footer">
-              <p>
-                By submitting this form, you agree to our Privacy Policy and
-                Terms of Service
-              </p>
               <button
                 type="submit"
                 className="modal-btn"
-                disabled={isSubmitting}
+                disabled={isSubmitting || isSubmitted}
               >
                 Submit
               </button>
@@ -111,6 +160,7 @@ const AppointmentForm = ({ onSubmit, isformSmall = false }) => {
           <div className="form-img-container">
             <img src={cosmetologyImg} className="cosmetology-img" alt="" />
           </div>
+          <Field type="text" name="botcheck" style={{ display: 'none' }} />
         </Form>
       )}
     </Formik>
