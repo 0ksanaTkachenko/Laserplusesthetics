@@ -3,7 +3,14 @@ import telegramIcon from '@assets/images/icons/telegram.png';
 import whatsappIcon from '@assets/images/icons/whatsapp.png';
 import facebookIcon from '@assets/images/icons/facebook.png';
 
-const socialsMedia = [
+export const contactInfo = {
+  location: '4646 Dufferin St Unit 1, North York, ON',
+  phone: '+1 (647) 248-3504',
+  phoneLink: '+16472483504',
+  email: 'sampleEmail@gmail.com',
+};
+
+export const socialsMedia = [
   {
     name: 'Instagram',
     icon: instagramIcon,
@@ -12,12 +19,12 @@ const socialsMedia = [
   {
     name: 'Telegram',
     icon: telegramIcon,
-    url: 'https://wa.me/16472483504',
+    url: 'https://t.me/your_username',
   },
   {
     name: 'WhatsApp',
     icon: whatsappIcon,
-    url: 'https://wa.me/1234567890',
+    url: 'https://wa.me/16472483504',
   },
   {
     name: 'Facebook',
@@ -25,5 +32,3 @@ const socialsMedia = [
     url: 'https://www.facebook.com/your_username',
   },
 ];
-
-export default socialsMedia;

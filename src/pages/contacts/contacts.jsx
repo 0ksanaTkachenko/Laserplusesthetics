@@ -5,8 +5,9 @@ import contactsHeader from '@assets/images/contactsPage/contacts-header.png';
 import phoneIcon from '@assets/images/icons/phone-icon.png';
 import locationIcon from '@assets/images/icons/location-icon.png';
 import emailIcon from '@assets/images/icons/email-icon.png';
-import socialsMedia from '@data/socialsMedia';
+import { socialsMedia } from '@data/contactData';
 import AppointmentForm from '@components/appointmentForm/appointmentForm';
+import { contactInfo } from '@data/contactData';
 
 const GoogleMap = () => {
   return (
@@ -43,15 +44,15 @@ const ContactsPage = () => {
           <div className="contacts-items d-flex flex-column">
             <div className="contact-item">
               <img src={locationIcon} alt="Location" className="contact-icon" />
-              <p>4646 Dufferin St Unit 1, North York, ON</p>
+              <p>{contactInfo.location}</p>
             </div>
             <div className="contact-item">
               <img src={phoneIcon} alt="Phone" className="contact-icon" />
-              <p>+1 (647) 248-3504</p>
+              <p>{contactInfo.phone}</p>
             </div>
             <div className="contact-item">
               <img src={emailIcon} alt="Email" className="contact-icon" />
-              <p>sampleEmail@gmail.com</p>
+              <p>{contactInfo.email}</p>
             </div>
           </div>
           <div className="social-media-container d-flex justify-content-around">
@@ -90,7 +91,7 @@ const ContactsPage = () => {
           reach out. Fill out the form below, and I’ll get back to you within 24
           hours!
         </p>
-        <a href="tel:+16472483504" className="call-btn">
+        <a href={`tel:${contactInfo.phoneLink}`} className="call-btn">
           📞 Call Now
         </a>
       </div>

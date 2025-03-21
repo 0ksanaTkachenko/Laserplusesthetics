@@ -4,6 +4,7 @@ import logo from '@assets/images/logo.png';
 import MenuComponent from '@components/Header/NavMenu/navMenu';
 import { NavLink } from 'react-router-dom';
 import routes from '../../../data/routes';
+import { contactInfo } from '@data/contactData';
 
 const Header = () => {
   return (
@@ -11,10 +12,8 @@ const Header = () => {
       <div className="top-bar">
         <div className="top-bar-container">
           <div className="contact-info">
-            <span className="contact-text">+1 (647) 248-3504</span>
-            <span className="contact-address">
-              4646 Dufferin St Unit 1, North York, ON
-            </span>
+            <span className="contact-text">{contactInfo.phone}</span>
+            <span className="contact-address">{contactInfo.email}</span>
           </div>
         </div>
       </div>

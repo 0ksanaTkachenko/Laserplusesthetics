@@ -1,7 +1,7 @@
 // import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '@components/Header/DesktopHeader/Header';
-import Footer from '@components/Footer/Footer';
+import Footer from '@components/footer/footer';
 import HomePage from '@pages/home/home';
 import AboutPage from '@pages/about/about';
 import ServicesPage from './pages/services/services';

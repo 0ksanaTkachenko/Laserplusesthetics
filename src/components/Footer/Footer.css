@@ -1,30 +1,23 @@
 .footer-container {
-  position: relative;
   color: var(--text-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
 }
 
-.footer-nav-container .nav-menu {
+.footer-nav-container .nav-menu,
+.footer-text-container ul {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   color: var(--text-white);
   padding: 0;
+  font-size: var(--font-size-extra-small);
 }
 
 .footer-nav-container .nav-menu a {
   color: var(--text-white);
 }
 
-.footer-nav-container .nav-menu a:hover {
-  color: var(--hover-text-white);
-}
-
 .footer-background-overlay {
-  top: 0px;
-  position: absolute;
-  height: 100%;
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
@@ -34,18 +27,9 @@
 
 .footer-text-container {
   font-size: var(--font-size-extra-small);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.footer-text-container ul {
-  padding: 0px;
 }
 
 .footer-text-container li {
-  cursor: pointer;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -58,6 +42,17 @@
   background-color: var(--white-element);
 }
 
+.footer-container li a,
+.footer-container a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.footer-container li a:hover,
+.footer-container a:hover {
+  color: var(--hover-text-white);
+}
+
 @media (max-width: 700px) {
   .footer-text-container {
     flex-direction: row;
@@ -65,10 +60,14 @@
     width: 100%;
   }
 
+  .footer-nav-container .nav-menu {
+    flex-direction: row;
+    gap: var(--elem-indent-small);
+  }
+
   .footer-text-container div {
     text-align: center;
     padding: var(--elem-indent-small);
-
     width: 100%;
   }
 
@@ -77,8 +76,7 @@
   }
 
   .footer-text-container ul {
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
     margin: 0px;
     gap: var(--elem-indent-small);
   }
