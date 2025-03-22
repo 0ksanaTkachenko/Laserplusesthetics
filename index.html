@@ -4,13 +4,14 @@
     <meta
       http-equiv="Content-Security-Policy"
       content="
-        default-src 'self';
-        font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com data:;
-        img-src 'self' data:;
-        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-        script-src 'self' https://code.jquery.com;
-        frame-src 'self' https://www.google.com https://www.google.com/maps/;
-    "
+    default-src 'self';
+    connect-src 'self' https://api.telegram.org;
+    font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com data:;
+    img-src 'self' data:;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    script-src 'self' https://code.jquery.com;
+    frame-src 'self' https://www.google.com https://www.google.com/maps/;
+  "
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
