@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react';
 import { fileURLToPath, URL } from 'url';
 
 export default defineConfig({
-  base: '/Laserplusesthetics/',
+  // base: '/Laserplusesthetics/',
+  base: '/',
   plugins: [react()],
   resolve: {
     alias: {
