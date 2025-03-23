@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import './services.css';
 import { motion } from 'framer-motion';
 import animations from '@data/animations';

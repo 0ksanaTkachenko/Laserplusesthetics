@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import results from '@data/results';
 import './results.css';
 import headerImg from '@assets/images/resultsPage/header-img.png';

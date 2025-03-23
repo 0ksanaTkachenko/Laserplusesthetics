@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import './aboutHeader.css';
 import AboutLeftWomen from '@assets/images/AboutPage/About-left-women.png';
 import AboutRightWomen from '@assets/images/AboutPage/About-right-women.png';

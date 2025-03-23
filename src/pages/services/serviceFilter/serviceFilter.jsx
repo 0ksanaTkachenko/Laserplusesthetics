@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import './serviceFilter.css';
 import services from '@data/services';
 import useIsMobile from '@hooks/useIsMobile';

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import './resultItem.css';
 import ReactCompareImage from 'react-compare-image';
 import { useState, useEffect } from 'react';

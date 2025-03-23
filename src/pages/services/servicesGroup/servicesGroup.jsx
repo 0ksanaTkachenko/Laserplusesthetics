@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import './servicesGroup.css';
 import useIsMobile from '@hooks/useIsMobile';
 import { motion } from 'framer-motion';

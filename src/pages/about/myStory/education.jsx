@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import certificates from '@data/certificates';
 import Slider from 'react-slick';
 

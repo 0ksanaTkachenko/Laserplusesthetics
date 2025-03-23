@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import './appointment.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';

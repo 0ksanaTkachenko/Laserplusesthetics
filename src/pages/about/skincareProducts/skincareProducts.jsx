@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import './skincareProducts.css';
 import skincare from '@data/skincare';
 import { motion } from 'framer-motion';

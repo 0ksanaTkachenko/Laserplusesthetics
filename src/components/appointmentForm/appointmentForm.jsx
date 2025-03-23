@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import './appointmentForm.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
