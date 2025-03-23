@@ -1,9 +1,9 @@
 const routes = {
-  home: '/Laserplusesthetics/',
-  about: '/Laserplusesthetics/about',
-  services: '/Laserplusesthetics/services',
-  results: '/Laserplusesthetics/results',
-  contacts: '/Laserplusesthetics/contacts',
+  home: '/',
+  about: '/about',
+  services: '/services',
+  results: '/results',
+  contacts: '/contacts',
 };
 
 export default routes;

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import './NavMenu.css';
 import { NavLink } from 'react-router-dom';
-import routes from '../../../data/routes';
+import routes from '@data/routes';
 
 const MenuComponent = ({ mobileMenuClicked }) => {
   return (

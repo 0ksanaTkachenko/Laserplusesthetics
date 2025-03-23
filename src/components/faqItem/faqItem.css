@@ -2,10 +2,6 @@
   width: 100%;
 }
 
-/* .faq-item-container.visible {
-    opacity: 1;
-} */
-
 .faq-item {
   background-color: var(--sections-background);
   color: var(--text-white);

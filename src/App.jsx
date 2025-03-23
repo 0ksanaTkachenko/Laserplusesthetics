@@ -13,6 +13,8 @@ import useIsMobile from '@hooks/useIsMobile';
 import MobileHeader from '@components/Header/MobileHeader/MobileHeader';
 import routes from './data/routes';
 import ScrollToTopButton from './components/scrollToTopButton/scrollToTopButton';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   const isMobile = useIsMobile(700);
@@ -34,6 +36,7 @@ const App = () => {
           <Footer />
         </div>
         <div className="sidebars"></div>
+        <ToastContainer position="top-right" autoClose={5000} />
       </div>
     </Router>
   );

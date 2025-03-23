@@ -3,7 +3,7 @@ import './Header.css';
 import logo from '@assets/images/logo.png';
 import MenuComponent from '@components/Header/NavMenu/navMenu';
 import { NavLink } from 'react-router-dom';
-import routes from '../../../data/routes';
+import routes from '@data/routes';
 import { contactInfo } from '@data/contactData';
 
 const Header = () => {
