@@ -6,6 +6,7 @@ import cosmetologyBackImg from '@assets/images/cosmetology-form-thanks.png';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { sendTelegramMessage } from '../../lib/telegram';
 
 const validationSchema = Yup.object({
   name: Yup.string().min(2, 'Too short!').required('Required'),
@@ -28,38 +29,13 @@ const handleSubmit = async (
 ) => {
   if (values.botcheck) return;
 
-  const TELEGRAM_TOKEN = '8002788686:AAF4KhOZs96u60QHTliHneJC6qSUWgPqjds';
-  const TELEGRAM_CHAT_ID = '618161386';
-
-  const message = `📩 Appointment Request:
-  👤 Name: ${values.name}
-  📞 Phone: ${values.phone}
-  📧 Email: ${values.email}
-  🌐 Language: ${values.preferredLanguage}
-  📝 Comments: ${values.comments || 'No comments.'}`;
-
   try {
-    const res = await fetch(
-      `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          chat_id: TELEGRAM_CHAT_ID,
-          text: message,
-          parse_mode: 'Markdown',
-        }),
-      }
-    );
-
-    if (res.ok) {
-      toast.success('Message sent!');
-      setFormSent(true);
-    } else {
-      toast.error('Failed to send message. Please try again.');
-    }
+    await sendTelegramMessage(values);
+    console.log(values);
+    setFormSent(true);
+    toast.success('Message sent!');
   } catch (error) {
-    toast.error('Network error.');
+    toast.error('Failed to send message. Please try again.');
   }
 
   setIsSubmitted(true);
