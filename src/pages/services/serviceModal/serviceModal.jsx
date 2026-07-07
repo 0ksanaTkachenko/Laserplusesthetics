@@ -19,14 +19,6 @@ const ServicesModal = ({ show, handleClose, subService }) => {
           <div className="services-modal-text-container d-flex align-items-center justify-content-center overflow-auto">
             <p>{subService.description}</p>
           </div>
-          <div className="session-details-container position-relative">
-            <div className="top-0 start-0 d-flex align-items-center">
-              Duration: {subService.duration}
-            </div>
-            <div className="bottom-0 end-0 d-flex align-items-center">
-              Sessions: {subService.minSessions}
-            </div>
-          </div>
         </div>
       </Modal.Body>
     </Modal>

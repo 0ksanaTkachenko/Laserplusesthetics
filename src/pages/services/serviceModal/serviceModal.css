@@ -23,21 +23,6 @@
   line-height: 1.5;
 }
 
-.session-details-container {
-  width: 40%;
-}
-
-.session-details-container div {
-  position: absolute;
-  height: 230px;
-  width: 230px;
-  justify-content: center;
-  background-image: url('@assets/images/ServicesPage/sub-service-background.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
 .services-modal-text-container::-webkit-scrollbar {
   width: 8px;
 }
@@ -65,22 +50,6 @@
     width: 100%;
     height: 50%;
   }
-
-  .session-details-container {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .session-details-container div {
-    position: static;
-    height: 100%;
-    width: 50%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 
 @media (max-width: 767px) {
@@ -91,9 +60,5 @@
 
   .services-modal-text-container {
     height: 70%;
-  }
-
-  .session-details-container {
-    height: 30%;
   }
 }
