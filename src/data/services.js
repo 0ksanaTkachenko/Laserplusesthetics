@@ -51,14 +51,14 @@ const services = [
         minSessions: '2-3',
         duration: '60 min',
       },
-      {
-        name: 'Laser Facial',
-        img: laserFacialImg,
-        description:
-          'The Laser Facial is a non-invasive treatment designed to rejuvenate the skin, improve its texture, and restore a natural glow. Using advanced laser technology, it gently targets fine lines, uneven skin tone, enlarged pores, and dullness, stimulating collagen production and enhancing skin elasticity. This treatment not only smooths and brightens the complexion but also helps reduce minor imperfections, leaving the skin looking fresh, radiant, and revitalized after just one session.',
-        minSessions: '1-2',
-        duration: '45 min',
-      },
+      // {
+      //   name: 'Laser Facial',
+      //   img: laserFacialImg,
+      //   description:
+      //     'The Laser Facial is a non-invasive treatment designed to rejuvenate the skin, improve its texture, and restore a natural glow. Using advanced laser technology, it gently targets fine lines, uneven skin tone, enlarged pores, and dullness, stimulating collagen production and enhancing skin elasticity. This treatment not only smooths and brightens the complexion but also helps reduce minor imperfections, leaving the skin looking fresh, radiant, and revitalized after just one session.',
+      //   minSessions: '1-2',
+      //   duration: '45 min',
+      // },
       {
         name: 'Deep Cleansing Facial',
         img: deepCleansingImg,
@@ -133,111 +133,111 @@ const services = [
       },
     ],
   },
-  {
-    category: 'Laser and Electrolysis Treatments',
-    id: 2,
-    img: laserTreatmentsImg,
-    description:
-      'Laser treatments effectively target pigmentation, spider veins, unwanted hair, and signs of aging. Advanced technology gently enhances skin texture, improves elasticity, and restores a youthful glow',
-    services: [
-      {
-        name: 'Laser Hair Removal',
-        img: laserHairRemovalImg,
-        description:
-          'Laser Hair Removal is a safe and effective method for achieving long-lasting smooth skin. A certified technician applies targeted laser light to unwanted hair, destroying the follicle at the root to prevent regrowth. Since hair grows in cycles, multiple sessions—typically spaced four weeks apart—are needed to treat each hair during its growth phase. This results in significantly reduced hair over time, leaving the skin silky, smooth, and hair-free.',
-        minSessions: '6-8',
-        duration: '30-90 min',
-      },
-      {
-        name: 'Pigmentation Treatment',
-        img: pigmentationImg,
-        description:
-          'The Pigmentation Treatment is designed to reduce dark spots, sun damage, and uneven skin tone, revealing a clearer and more radiant complexion. Using advanced techniques, this treatment targets excess melanin, lightens hyperpigmentation, and promotes skin cell renewal. Over time, it helps fade discoloration, smooth skin texture, and restore a balanced, even skin tone, leaving your skin brighter, healthier, and naturally glowing.',
-        minSessions: '4-6',
-        duration: '60 min',
-      },
-      {
-        name: 'Spot Treatment',
-        img: spotImg,
-        description:
-          'The Spot Treatment is a targeted solution designed to reduce dark spots, blemishes, and localized pigmentation. By focusing on specific problem areas, it effectively lightens discoloration, evens out skin tone, and promotes a clearer, more radiant complexion. This treatment helps fade stubborn spots caused by acne, sun damage, or aging, leaving your skin smoother, brighter, and visibly refreshed.',
-        minSessions: '3-5',
-        duration: '30-45 min',
-      },
-      {
-        name: 'Skin Tightening / Toning',
-        img: skinTighteningImg,
-        description:
-          'The Skin Tightening / Toning treatment is designed to improve skin elasticity, reduce sagging, and create a firmer, more youthful appearance. Using advanced techniques, it stimulates collagen production, smooths fine lines, and enhances skin texture. Ideal for areas prone to laxity, this non-invasive treatment lifts and tones the skin, leaving it visibly tighter, smoother, and naturally radiant.',
-        minSessions: '4-6',
-        duration: '60 min',
-      },
-      {
-        name: 'Skin Tags and Mole Removal',
-        img: moleImg,
-        description:
-          'The Skin Tags & Mole Removal treatment offers a safe and precise solution for eliminating unwanted skin tags and benign moles. Using advanced, non-invasive techniques, this procedure gently removes imperfections with minimal discomfort and no scarring. It leaves the skin smooth, clear, and refreshed, helping you achieve a flawless appearance while boosting confidence.',
-        minSessions: '1-2',
-        duration: '30 min',
-      },
-      {
-        name: 'Spider Veins Treatment',
-        img: spiderVeinsImg,
-        description:
-          'The Spider Veins Treatment uses advanced laser technology to safely and effectively reduce the appearance of visible spider veins, leaving your skin clearer and more radiant. This non-invasive procedure precisely targets unwanted veins, breaking them down without damaging surrounding tissue. With no needles or downtime, it smooths your complexion, enhances skin tone, and boosts confidence—all with quick, painless results.',
-        minSessions: '2-4',
-        duration: '30-45 min',
-      },
-      {
-        name: 'Aging Wrinkles / Fine Lines Reduction',
-        img: agingWrinklesImg,
-        description:
-          'The Aging Wrinkles / Fine Lines Reduction treatment is designed to smooth out fine lines, reduce wrinkles, and restore youthful skin texture. By stimulating collagen production and enhancing skin elasticity, this non-invasive procedure targets visible signs of aging, softening lines and improving overall firmness. The result is smoother, plumper, and more radiant skin, with a naturally refreshed appearance.',
-        minSessions: '4-6',
-        duration: '60 min',
-      },
-      {
-        name: 'Laser Rejuvenation',
-        img: laserRejuvenationImg,
-        description:
-          'The Laser Rejuvenation treatment is a non-invasive procedure that revitalizes the skin by targeting fine lines, wrinkles, and uneven skin tone. Using advanced laser technology, it stimulates collagen production, smooths skin texture, and reduces signs of aging. This treatment brightens the complexion, improves elasticity, and leaves the skin firmer, clearer, and naturally radiant with minimal downtime.',
-        minSessions: '3-5',
-        duration: '60 min',
-      },
-      {
-        name: 'Nails Fungus Laser Treatment',
-        img: nailsImg,
-        description:
-          'The Nails Fungus Laser Treatment is a safe and effective solution for eliminating fungal infections from toenails and fingernails. Using advanced laser technology, it targets the fungus beneath the nail without damaging surrounding tissue, promoting healthy nail growth. This non-invasive treatment helps restore the clarity, strength, and appearance of your nails, leaving them healthier, clearer, and fungus-free.',
-        minSessions: '4-8',
-        duration: '30-45 min',
-      },
-      {
-        name: 'Electrolysis Hair Removal',
-        img: electrolysisImg,
-        description:
-          'Electrolysis Hair Removal is a precise and permanent method for eliminating unwanted hair from the face or body. Using heat energy, this treatment targets and destroys the hair’s growth center by inserting a fine probe into the follicle, followed by gentle removal with tweezers. Safe and effective for all skin types, electrolysis offers long-lasting results, leaving your skin smooth, hair-free, and flawless.',
-        minSessions: '8-12',
-        duration: '15-60 min',
-      },
-      {
-        name: 'Rosacea Treatment',
-        img: rosaceaImg,
-        description:
-          'The Rosacea Treatment is designed to reduce redness, inflammation, and visible blood vessels commonly associated with rosacea. Using advanced techniques, it soothes irritated skin, strengthens blood vessels, and helps even out skin tone. This gentle yet effective treatment minimizes flare-ups, calms sensitivity, and leaves the complexion clearer, smoother, and more balanced.',
-        minSessions: '4-6',
-        duration: '45-60 min',
-      },
-      {
-        name: 'Facial Telangiectasia Treatment',
-        img: telangiectasiaImg,
-        description:
-          'The Facial Telangiectasia Treatment targets visible broken capillaries and spider veins on the face, reducing redness and restoring an even skin tone. Using precise, non-invasive techniques, it gently collapses dilated blood vessels without harming surrounding tissue. This treatment helps smooth the complexion, minimize redness, and leave the skin clearer, healthier, and naturally radiant.',
-        minSessions: '2-4',
-        duration: '30-45 min',
-      },
-    ],
-  },
+  // {
+  //   category: 'Laser and Electrolysis Treatments',
+  //   id: 2,
+  //   img: laserTreatmentsImg,
+  //   description:
+  //     'Laser treatments effectively target pigmentation, spider veins, unwanted hair, and signs of aging. Advanced technology gently enhances skin texture, improves elasticity, and restores a youthful glow',
+  //   services: [
+  //     {
+  //       name: 'Laser Hair Removal',
+  //       img: laserHairRemovalImg,
+  //       description:
+  //         'Laser Hair Removal is a safe and effective method for achieving long-lasting smooth skin. A certified technician applies targeted laser light to unwanted hair, destroying the follicle at the root to prevent regrowth. Since hair grows in cycles, multiple sessions—typically spaced four weeks apart—are needed to treat each hair during its growth phase. This results in significantly reduced hair over time, leaving the skin silky, smooth, and hair-free.',
+  //       minSessions: '6-8',
+  //       duration: '30-90 min',
+  //     },
+  //     {
+  //       name: 'Pigmentation Treatment',
+  //       img: pigmentationImg,
+  //       description:
+  //         'The Pigmentation Treatment is designed to reduce dark spots, sun damage, and uneven skin tone, revealing a clearer and more radiant complexion. Using advanced techniques, this treatment targets excess melanin, lightens hyperpigmentation, and promotes skin cell renewal. Over time, it helps fade discoloration, smooth skin texture, and restore a balanced, even skin tone, leaving your skin brighter, healthier, and naturally glowing.',
+  //       minSessions: '4-6',
+  //       duration: '60 min',
+  //     },
+  //     {
+  //       name: 'Spot Treatment',
+  //       img: spotImg,
+  //       description:
+  //         'The Spot Treatment is a targeted solution designed to reduce dark spots, blemishes, and localized pigmentation. By focusing on specific problem areas, it effectively lightens discoloration, evens out skin tone, and promotes a clearer, more radiant complexion. This treatment helps fade stubborn spots caused by acne, sun damage, or aging, leaving your skin smoother, brighter, and visibly refreshed.',
+  //       minSessions: '3-5',
+  //       duration: '30-45 min',
+  //     },
+  //     {
+  //       name: 'Skin Tightening / Toning',
+  //       img: skinTighteningImg,
+  //       description:
+  //         'The Skin Tightening / Toning treatment is designed to improve skin elasticity, reduce sagging, and create a firmer, more youthful appearance. Using advanced techniques, it stimulates collagen production, smooths fine lines, and enhances skin texture. Ideal for areas prone to laxity, this non-invasive treatment lifts and tones the skin, leaving it visibly tighter, smoother, and naturally radiant.',
+  //       minSessions: '4-6',
+  //       duration: '60 min',
+  //     },
+  //     {
+  //       name: 'Skin Tags and Mole Removal',
+  //       img: moleImg,
+  //       description:
+  //         'The Skin Tags & Mole Removal treatment offers a safe and precise solution for eliminating unwanted skin tags and benign moles. Using advanced, non-invasive techniques, this procedure gently removes imperfections with minimal discomfort and no scarring. It leaves the skin smooth, clear, and refreshed, helping you achieve a flawless appearance while boosting confidence.',
+  //       minSessions: '1-2',
+  //       duration: '30 min',
+  //     },
+  //     {
+  //       name: 'Spider Veins Treatment',
+  //       img: spiderVeinsImg,
+  //       description:
+  //         'The Spider Veins Treatment uses advanced laser technology to safely and effectively reduce the appearance of visible spider veins, leaving your skin clearer and more radiant. This non-invasive procedure precisely targets unwanted veins, breaking them down without damaging surrounding tissue. With no needles or downtime, it smooths your complexion, enhances skin tone, and boosts confidence—all with quick, painless results.',
+  //       minSessions: '2-4',
+  //       duration: '30-45 min',
+  //     },
+  //     {
+  //       name: 'Aging Wrinkles / Fine Lines Reduction',
+  //       img: agingWrinklesImg,
+  //       description:
+  //         'The Aging Wrinkles / Fine Lines Reduction treatment is designed to smooth out fine lines, reduce wrinkles, and restore youthful skin texture. By stimulating collagen production and enhancing skin elasticity, this non-invasive procedure targets visible signs of aging, softening lines and improving overall firmness. The result is smoother, plumper, and more radiant skin, with a naturally refreshed appearance.',
+  //       minSessions: '4-6',
+  //       duration: '60 min',
+  //     },
+  //     {
+  //       name: 'Laser Rejuvenation',
+  //       img: laserRejuvenationImg,
+  //       description:
+  //         'The Laser Rejuvenation treatment is a non-invasive procedure that revitalizes the skin by targeting fine lines, wrinkles, and uneven skin tone. Using advanced laser technology, it stimulates collagen production, smooths skin texture, and reduces signs of aging. This treatment brightens the complexion, improves elasticity, and leaves the skin firmer, clearer, and naturally radiant with minimal downtime.',
+  //       minSessions: '3-5',
+  //       duration: '60 min',
+  //     },
+  //     {
+  //       name: 'Nails Fungus Laser Treatment',
+  //       img: nailsImg,
+  //       description:
+  //         'The Nails Fungus Laser Treatment is a safe and effective solution for eliminating fungal infections from toenails and fingernails. Using advanced laser technology, it targets the fungus beneath the nail without damaging surrounding tissue, promoting healthy nail growth. This non-invasive treatment helps restore the clarity, strength, and appearance of your nails, leaving them healthier, clearer, and fungus-free.',
+  //       minSessions: '4-8',
+  //       duration: '30-45 min',
+  //     },
+  //     {
+  //       name: 'Electrolysis Hair Removal',
+  //       img: electrolysisImg,
+  //       description:
+  //         'Electrolysis Hair Removal is a precise and permanent method for eliminating unwanted hair from the face or body. Using heat energy, this treatment targets and destroys the hair’s growth center by inserting a fine probe into the follicle, followed by gentle removal with tweezers. Safe and effective for all skin types, electrolysis offers long-lasting results, leaving your skin smooth, hair-free, and flawless.',
+  //       minSessions: '8-12',
+  //       duration: '15-60 min',
+  //     },
+  //     {
+  //       name: 'Rosacea Treatment',
+  //       img: rosaceaImg,
+  //       description:
+  //         'The Rosacea Treatment is designed to reduce redness, inflammation, and visible blood vessels commonly associated with rosacea. Using advanced techniques, it soothes irritated skin, strengthens blood vessels, and helps even out skin tone. This gentle yet effective treatment minimizes flare-ups, calms sensitivity, and leaves the complexion clearer, smoother, and more balanced.',
+  //       minSessions: '4-6',
+  //       duration: '45-60 min',
+  //     },
+  //     {
+  //       name: 'Facial Telangiectasia Treatment',
+  //       img: telangiectasiaImg,
+  //       description:
+  //         'The Facial Telangiectasia Treatment targets visible broken capillaries and spider veins on the face, reducing redness and restoring an even skin tone. Using precise, non-invasive techniques, it gently collapses dilated blood vessels without harming surrounding tissue. This treatment helps smooth the complexion, minimize redness, and leave the skin clearer, healthier, and naturally radiant.',
+  //       minSessions: '2-4',
+  //       duration: '30-45 min',
+  //     },
+  //   ],
+  // },
   {
     category: 'Microneedling & PRP',
     id: 3,
