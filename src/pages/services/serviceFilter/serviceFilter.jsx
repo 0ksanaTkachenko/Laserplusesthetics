@@ -1,31 +1,15 @@
 import './serviceFilter.css';
 import services from '@data/services';
 import useIsMobile from '@hooks/useIsMobile';
-import { useEffect, useState, useMemo, useCallback } from 'react';
-import ServicesModal from '../serviceModal/serviceModal';
-import { motion } from 'framer-motion';
-import animations from '@data/animations';
+import { useEffect, useState, useMemo } from 'react';
 
 const ServicesItem = ({ subService }) => {
-  const [showModal, setShowModal] = useState(false);
-  const handleShow = useCallback(() => setShowModal(true), []);
-  const handleClose = useCallback(() => setShowModal(false), []);
-
   return (
     <>
-      <motion.div
-        className="sub-services d-flex flex-column"
-        onClick={handleShow}
-        initial={{ boxShadow: 'none' }}
-        whileHover={animations.hoverInnerShadow}
-      >
+      <div className="sub-services d-flex flex-column">
         <div className="sub-services-name">{subService.name}</div>
-      </motion.div>
-      <ServicesModal
-        show={showModal}
-        handleClose={handleClose}
-        subService={subService}
-      />
+        <p>{subService.description}</p>
+      </div>
     </>
   );
 };
