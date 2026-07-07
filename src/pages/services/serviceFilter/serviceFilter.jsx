@@ -20,13 +20,6 @@ const ServicesItem = ({ subService }) => {
         whileHover={animations.hoverInnerShadow}
       >
         <div className="sub-services-name">{subService.name}</div>
-        <div className="sub-services-img">
-          <img
-            src={subService.img}
-            className="img-fluid w-100 h-100"
-            alt={subService.name}
-          />
-        </div>
       </motion.div>
       <ServicesModal
         show={showModal}
