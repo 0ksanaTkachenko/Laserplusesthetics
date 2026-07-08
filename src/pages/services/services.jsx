@@ -76,18 +76,27 @@ const ServicesPage = () => {
           subServicesRef={subServicesRef}
           clickedСategory={clickedСategory}
         />
-        <div
-          className="book-now d-flex justify-content-center"
-          onClick={() => setIsModalOpen(true)}
-        >
-          <motion.div
-            className="book-now-img position-relative"
-            variants={animations.fadeIn}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          ></motion.div>
+        <div className="consultation-note">
+          <h3>Not sure where to start?</h3>
+
+          <p>
+            Book a consultation and we&apos;ll create a personalized treatment
+            plan based on your concerns, goals, and skin needs.
+          </p>
+          <div
+            className="book-now d-flex justify-content-center"
+            onClick={() => setIsModalOpen(true)}
+          >
+            <motion.div
+              className="book-now-img position-relative"
+              variants={animations.fadeIn}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            ></motion.div>
+          </div>
         </div>
+
         <ModalAppointment
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
