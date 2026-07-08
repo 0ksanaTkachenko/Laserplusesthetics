@@ -1,7 +1,6 @@
 import facialTreatmentsImg from '@assets/images/ServicesPage/services-categories/facial-treatments.jpg';
 import microneedlingImg from '@assets/images/ServicesPage/services-categories/microneedling.jpg';
 import bodyContouringImg from '@assets/images/ServicesPage/services-categories/body-contouring.jpg';
-import laserEpilationImg from '@assets/images/ServicesPage/services-categories/laser-epilation.jpg';
 
 const services = [
   {
@@ -180,7 +179,7 @@ const services = [
   },
   {
     category: 'Microneedling & PRP',
-    id: 3,
+    id: 2,
     img: microneedlingImg,
     description:
       'Microneedling and PRP therapy stimulate natural skin renewal, improving elasticity and texture. These treatments help reduce wrinkles, diminish pigmentation, and strengthen hair, leaving the skin healthier and more youthful',
@@ -209,7 +208,7 @@ const services = [
   },
   {
     category: 'Body Contouring & Skin Rejuvenation',
-    id: 4,
+    id: 3,
     img: bodyContouringImg,
     description:
       'Body contouring and skin rejuvenation treatments enhance skin firmness, reduce wrinkles, and smooth out imperfections. Advanced techniques help sculpt the body, minimize cellulite, and restore a youthful appearance',
@@ -243,20 +242,6 @@ const services = [
         name: 'Lymphatic Drainage',
         description:
           'The Lymphatic Drainage treatment is a gentle vacuum massage enhanced with radio frequencies, designed to stimulate the lymphatic system, promote detoxification, and improve circulation. This non-invasive procedure aids in reducing water retention, boosting weight loss efforts, and tightening loose skin. It not only helps sculpt and contour the body but also leaves the skin firmer, smoother, and more toned, offering a natural, healthy glow.',
-      },
-    ],
-  },
-  {
-    category: 'Specialized Treatments',
-    id: 5,
-    img: laserEpilationImg,
-    description:
-      'Personalized treatments crafted to address specific skin imperfections and delicate concerns. From targeted corrections to advanced skin care solutions, these procedures offer precise results for long-lasting beauty and confidence',
-    services: [
-      {
-        name: 'Xanthelasma Treatment',
-        description:
-          'The Xanthelasma Treatment targets yellow cholesterol deposits that commonly appear around the inner corners of the eyelids. While harmless, these patches can affect your appearance. This treatment safely removes the buildup, restoring a smoother, clearer look to the skin and helping you feel more confident.',
       },
     ],
   },
