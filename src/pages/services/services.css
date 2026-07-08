@@ -150,6 +150,136 @@
   }
 }
 
+.lip-promo {
+  max-width: 1180px;
+  margin: 80px auto;
+  padding: 34px;
+  border-radius: 28px;
+  background: rgba(128, 180, 199, 0.08);
+  border: 1px solid rgba(128, 180, 199, 0.25);
+  display: grid;
+  grid-template-columns: 0.9fr 360px;
+  gap: 42px;
+  align-items: center;
+}
+
+.lip-promo-text {
+  max-width: 520px;
+  padding-left: 25px;
+}
+
+.lip-promo-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 13px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 600;
+}
+
+.lip-promo-text h2 {
+  margin: 0 0 18px;
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #222;
+}
+
+.lip-promo-text p {
+  margin: 0 0 26px;
+  font-size: 19px;
+  line-height: 1.65;
+  color: #555;
+}
+
+.lip-promo-text button {
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  background: var(--semi-transparent-sections-background);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(128, 180, 199, 0.35);
+}
+
+.lip-promo-img {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.lip-promo-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .lip-promo {
+    grid-template-columns: 1fr 320px;
+    gap: 30px;
+    padding: 28px;
+  }
+
+  .lip-promo-text h2 {
+    font-size: 46px;
+  }
+
+  .lip-promo-text p {
+    font-size: 17px;
+  }
+
+  .lip-promo-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .lip-promo {
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .lip-promo-img {
+    order: -1;
+    max-width: 340px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .lip-promo-text {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .lip-promo-label {
+    font-size: 12px;
+  }
+
+  .lip-promo-text h2 {
+    font-size: 36px;
+    line-height: 1.05;
+  }
+
+  .lip-promo-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .lip-promo-text button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
 .book-now-img {
   width: 60%;
   height: 200px;

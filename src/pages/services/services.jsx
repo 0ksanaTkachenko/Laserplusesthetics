@@ -10,6 +10,8 @@ import ServiceFilter from './serviceFilter/serviceFilter';
 import { useState, useRef } from 'react';
 import ModalAppointment from '@components/modalAppointment/modalAppointment';
 
+import lipEnhancementImg from '@assets/images/ServicesPage/lipEnhancement.jpg';
+
 const ServicesPage = () => {
   const [clickedСategory, setClickedСategory] = useState(null);
   const subServicesRef = useRef(null);
@@ -66,16 +68,43 @@ const ServicesPage = () => {
           <img src={underlinedImg} className="img-fluid w-100" alt="" />
         </motion.div>
       </div>
+
       <div className="services-main">
         <ServicesGroup
           subServicesRef={subServicesRef}
           setClickedСategory={setClickedСategory}
           services={services}
         />
+
+        <section className="lip-promo container">
+          <div className="lip-promo-text">
+            <span className="lip-promo-label">New Treatment</span>
+
+            <h2>Lip Enhancement</h2>
+
+            <p>
+              Enhance shape, hydration, symmetry, and volume with
+              natural-looking lip filler treatments designed to keep your
+              results soft, balanced, and beautifully you.
+            </p>
+
+            <button type="button" onClick={() => setIsModalOpen(true)}>
+              Book Consultation
+            </button>
+          </div>
+
+          <div className="lip-promo-img">
+            <img
+              src={lipEnhancementImg}
+              alt="Lip Enhancement treatment result"
+            />
+          </div>
+        </section>
         <ServiceFilter
           subServicesRef={subServicesRef}
           clickedСategory={clickedСategory}
         />
+
         <div className="consultation-note">
           <h3>Not sure where to start?</h3>
 
